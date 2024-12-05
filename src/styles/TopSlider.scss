@@ -1,0 +1,13 @@
+.top-info-slider {
+  background-color: #000;
+  
+  .icon {
+    width: 1rem;
+    transform: scaleX(-1);
+  }
+
+  .text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
