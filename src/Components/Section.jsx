@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaShippingFast, FaUndo, FaStore, FaCut } from 'react-icons/fa';
-import '../styles/section.scss';
+import '../styles/Section.scss';
 
 const Section = () => {
   return (
