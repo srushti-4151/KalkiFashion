@@ -14,7 +14,10 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [
-        require('autoprefixer')(),
+        require('postcss-import')(),
+        require('postcss-preset-env')({
+          stage: 1, // Enables modern CSS features
+        }),
       ],
     },
   },
