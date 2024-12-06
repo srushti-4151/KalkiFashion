@@ -122,37 +122,84 @@ const VisitStore = () => {
   };
 
   return (
-    <Container className="visit-stores mt-3">
+    <Container className="visit-stores mt-3" style={{ padding: "0.700rem" }}>
       <h2 className="text-center mb-4">Visit our Stores</h2>
-      <Row className="mb-4">
-        {stores.slice(0, 3).map((store, index) => (
-          <Col key={index} md={4} sm={12} className="mb-4">
+       <Row className="image-grid">
+          <Col md={6} sm={12} className="image-large">
             <div className="store-card">
               <img
-                src={store.imgSrc}
-                alt={store.title}
-                className="img-fluid store-image"
+                src="https://staticm247.kalkifashion.com/media/wysiwyg/709px-x-439px-indore-29-10-2024.jpg"
+                alt="Large Image"
+                className="img-fluid"
               />
               <div className="store-details text-center">
-                <h3 className="store-title">{store.title}</h3>
+                <h3 className="store-title">KALKI Indore</h3>
                 <div className="buttons1">
                   <Button
-                    href={store.storeLink}
+                    href="#"
                     variant="secondary"
                     className="custom-button me-2"
                   >
                     Visit Store
                   </Button>
-                  <Button href={store.collectionLink} variant="secondary" className="custom-button">
+                  <Button href="#" variant="secondary" className="custom-button">
                     View Collection
                   </Button>
                 </div>
               </div>
             </div>
           </Col>
-        ))}
-      </Row>
-      <Slider {...sliderSettings}>
+          <Col md={3} sm={6} className="image-small">
+            <div className="store-card">
+              <img
+                src="https://staticm247.kalkifashion.com/media/wysiwyg/345px-438px-pitampura-store-21-10-2024.jpg"
+                alt="Small Image 1"
+                className="img-fluid"
+              />
+              <div className="store-details text-center">
+                <h3 className="store-title">KALKI Pitampura</h3>
+                <div className="buttons1">
+                  <Button
+                    href="#"
+                    variant="secondary"
+                    className="custom-button me-2"
+                  >
+                    Visit Store
+                  </Button>
+                  <Button href="#" variant="secondary" className="custom-button">
+                    View Collection
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </Col>
+          <Col md={3} sm={6} className="image-small">
+            <div className="store-card">
+              <img
+                src="https://staticm247.kalkifashion.com/media/wysiwyg/345px-438px-mumbai-5-11-2024.jpg"
+                alt="Small Image 2"
+                className="img-fluid"
+              />
+              <div className="store-details text-center">
+                <h3 className="store-title">KALKI Mumbai</h3>
+                <div className="buttons1">
+                  <Button
+                    href="#"
+                    variant="secondary"
+                    className="custom-button me-2"
+                  >
+                    Visit Store
+                  </Button>
+                  <Button href="#" variant="secondary" className="custom-button">
+                    View Collection
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </Col>
+        </Row>
+
+      <Slider {...sliderSettings} className="store-slider">
         {stores1.map((store, index) => (
           <div key={index} className="slider-item">
             <div className="store-card">
@@ -171,7 +218,11 @@ const VisitStore = () => {
                   >
                     Visit Store
                   </Button>
-                  <Button href={store.collectionLink} variant="secondary" className="custom-button">
+                  <Button
+                    href={store.collectionLink}
+                    variant="secondary"
+                    className="custom-button"
+                  >
                     View Collection
                   </Button>
                 </div>
@@ -180,9 +231,9 @@ const VisitStore = () => {
           </div>
         ))}
       </Slider>
+
     </Container>
   );
 };
 
 export default VisitStore;
-

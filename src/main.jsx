@@ -11,15 +11,3 @@ createRoot(document.getElementById('root')).render(
   </StrictMode>,
 );
 
-// import { StrictMode } from 'react'
-// import { createRoot } from 'react-dom/client'
-// import "./styles/custom.scss"
-// import Header from './Components/Header.jsx';
-// import 'swiper/swiper-bundle.min.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-
-// createRoot(document.getElementById('root')).render(
-//   <StrictMode>
-//     <Header />
-//   </StrictMode>,
-// )

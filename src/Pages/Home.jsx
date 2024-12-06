@@ -17,6 +17,9 @@ import Section3 from '../Components/Section3';
 import CardSection from '../Components/CardSection';
 import InstaSction from '../Components/InstaSction';
 import VisitStore from '../Components/VisitStore';
+import CardSlider from '../Components/CardSlider';
+import Footer from '../Components/Footer';
+import KalkiDes from '../Components/KalkiDes';
 
 const Home = () => {
   return (
@@ -39,6 +42,9 @@ const Home = () => {
     <CardSection />
     <InstaSction />
     <VisitStore />
+    <CardSlider/>
+    <KalkiDes />
+    <Footer />
     </>
   )
 }
