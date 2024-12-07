@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "../styles/Saree.scss";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Saree = () => {
   return (

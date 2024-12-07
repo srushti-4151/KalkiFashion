@@ -2,8 +2,6 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Slider from "react-slick";
 import "../styles/VisitStore.scss";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 
