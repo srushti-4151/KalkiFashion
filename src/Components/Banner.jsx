@@ -48,6 +48,7 @@ import '../styles/Banner.scss';
 const Banner = () => {
   return (
     <>
+    <div className='banner-section'>
     <div className="video-shopping-banner">
       <div className="banner-content">
         <h1 className="banner-title">
@@ -80,6 +81,7 @@ const Banner = () => {
           </Button>
         </Form>
       </div>
+    </div>
     </div>
     </>
   );

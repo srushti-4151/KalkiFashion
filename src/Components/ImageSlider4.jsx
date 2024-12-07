@@ -136,7 +136,7 @@ const ImageSlider4 = () => {
 
   return (
     <div className="slider-container">
-      <h2 className="section-title">New This Week</h2>
+      <h2 className="section-title">Bestseller's Edit</h2>
       <Slider {...settings}>
         {sliderItems.map((item) => (
           <div key={item.id} className="slider-item">

@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Saree = () => {
   return (
+    <>
+    <h2 className="section-title">The Saree Edit</h2>
         <div className="saree-edit">
           <Container fluid className="saree-container">
             <Row>
@@ -58,7 +60,8 @@ const Saree = () => {
               </Col>
             </Row>
           </Container>
-        </div>  
+        </div> 
+        </> 
   );
 };
 

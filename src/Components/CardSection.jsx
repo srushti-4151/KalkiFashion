@@ -12,6 +12,7 @@ const CardSection = () => {
   }, []);
 
   return (
+    <>
     <section
       className="shop-video-call-section"
       style={{
@@ -62,6 +63,7 @@ const CardSection = () => {
         </div>
       )}
     </section>
+    </>
   );
 };
 

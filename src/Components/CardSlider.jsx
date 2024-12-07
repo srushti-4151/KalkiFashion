@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -50,13 +50,14 @@ const CardSlider = () => {
   ];
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 2, 
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    beforeChange: (current, next) => setActiveIndex(next),
     responsive: [
       {
         breakpoint: 1024,
@@ -68,8 +69,16 @@ const CardSlider = () => {
     ],
   };
 
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleDotClick = (index) => {
+    setActiveIndex(index);
+  };
+
+
   return (
     <div className="customer-stories">
+      <h2 className="section-title">Custom Stories</h2>
       <Slider {...settings}>
         {cardData.map((card, index) => (
           <div key={index} className="card">
@@ -85,6 +94,16 @@ const CardSlider = () => {
           </div>
         ))}
       </Slider>
+      {/* Custom Dots */}
+      <div className="custom-dots">
+        {cardData.map((_, index) => (
+          <button
+            key={index}
+            className={`custom-dot ${activeIndex === index ? 'active' : ''}`}
+            onClick={() => handleDotClick(index)}
+          ></button>
+        ))}
+      </div>
     </div>
   );
 };

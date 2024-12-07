@@ -8,6 +8,7 @@ const Section2 = () => {
     <>
     <Container fluid className="home-section">
       {/* Image Grid */}
+      <h2 className="section-title">Exclusively By Kalki</h2>
       <Row className="image-row">
         <Col xs={6} md={3} className="image-col">
           <div className="card">

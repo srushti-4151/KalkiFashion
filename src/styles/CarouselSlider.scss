@@ -1,6 +1,6 @@
 
 .custom-slider {
-  padding: 1rem;
+  padding: 0.8rem;
   position: relative;
   .slick-list {
     overflow: hidden;
@@ -37,5 +37,29 @@
   .custom-arrow:hover {
     background-color: rgba(0, 0, 0, 0.7);
   }
-  
+
+  .custom-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 0;
+    
+    .custom-dot {
+      width: 0.1rem;
+      height: 0.7rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .custom-dot.active {
+      background-color: #000;
+    }
+
+    .custom-dot:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
 }

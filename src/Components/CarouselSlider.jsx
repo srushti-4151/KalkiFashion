@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "../styles/CarouselSlider.scss";
@@ -28,6 +28,12 @@ const CarouselSlider = () => {
     },
   ];
 
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleDotClick = (index) => {
+    setActiveIndex(index);
+  };
+
   const CustomPrevArrow = ({ onClick }) => (
     <button className="custom-arrow prev-arrow" onClick={onClick}>
       &#10094;
@@ -41,7 +47,7 @@ const CarouselSlider = () => {
   );
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -50,6 +56,7 @@ const CarouselSlider = () => {
     autoplaySpeed: 3000,
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
+    beforeChange: (current, next) => setActiveIndex(next),
   };
 
   return (
@@ -72,6 +79,16 @@ const CarouselSlider = () => {
           </a>
         ))}
       </Slider>
+      {/* Custom Dots */}
+      <div className="custom-dots">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            className={`custom-dot ${activeIndex === index ? 'active' : ''}`}
+            onClick={() => handleDotClick(index)}
+          ></button>
+        ))}
+      </div>
     </div>
   );
 };

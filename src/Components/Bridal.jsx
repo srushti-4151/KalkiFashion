@@ -7,6 +7,7 @@ import "../styles/Bridal.scss";
 const Bridal = () => {
   return (
     <Container fluid className="wedding-banner">
+      <h2 className="Bridal-title">Bridal World</h2>
       <a 
         href="/shop" 
         className="banner-link"

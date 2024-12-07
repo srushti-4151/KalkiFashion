@@ -55,6 +55,12 @@
 //       }
 //     }
 //   }
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
 .customer-stories {
     overflow: hidden;
     margin: auto;
@@ -127,6 +133,30 @@
             color: #666;
           }
         }
+      }
+    }
+    .custom-dots {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding-top: 1.2rem;
+      
+      .custom-dot {
+        width: 0.2rem;
+        height: 0.7rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+  
+      .custom-dot.active {
+        background-color: #000;
+      }
+  
+      .custom-dot:hover {
+        background-color: rgba(0, 0, 0, 0.8);
       }
     }
   }
