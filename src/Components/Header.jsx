@@ -63,7 +63,7 @@ const Header = () => {
                 <div className="head-search-123">
                   <div className="head-search-1234">
                     Search for style, Collections & more
-                    <IoSearch className="head-search-12345" size={20} color="#404040" />
+                    <IoSearch className="head-search-12345" color="#404040" />
                   </div>
                 </div>
               </div>
@@ -79,31 +79,31 @@ const Header = () => {
                href="#" 
                target="_blank" 
                onClick={() => headerClickInteraction('Video Shopping')}>
-                  <CiVideoOn className="head-icon-12345" size={20} color="#404040"/>
+                  <CiVideoOn className="head-icon-12345" color="#404040"/>
             </a>
             <a className="header-video-shop" 
                href="#" 
                target="_blank" 
                onClick={() => headerClickInteraction('Video Shopping')}>
-                  <IoLogoWhatsapp className="head-icon-12345" size={20} color="#404040"/>
+                  <IoLogoWhatsapp className="head-icon-12345" color="#404040"/>
             </a>
             <a className="header-video-shop" 
                href="#" 
                target="_blank" 
                onClick={() => headerClickInteraction('Video Shopping')}>
-                  <CgProfile className="head-icon-12345" size={20} color="#404040"/>
+                  <CgProfile className="head-icon-12345" color="#404040"/>
             </a>
             <a className="header-video-shop" 
                href="#" 
                target="_blank" 
                onClick={() => headerClickInteraction('Video Shopping')}>
-                  <GoHeart className="head-icon-12345" size={20} color="#404040"/>
+                  <GoHeart className="head-icon-12345" color="#404040"/>
             </a>
             <a className="header-video-shop" 
                href="#" 
                target="_blank" 
                onClick={() => headerClickInteraction('Video Shopping')}>
-                  <HiOutlineShoppingBag className="head-icon-12345" size={20} color="#404040"/>
+                  <HiOutlineShoppingBag className="head-icon-12345" color="#404040"/>
             </a>
           </div>
         </div>

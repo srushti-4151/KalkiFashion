@@ -28,14 +28,6 @@ const TopSlider = () => {
         {slides.map((text, index) => (
           <SwiperSlide key={index}>
             <div className="d-flex align-items-center justify-content-center gap-2">
-              <svg
-                className="icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 640 512"
-                fill="#ffffff"
-              >
-                <path d="M48 0C21.48s21.5-48 48-48s48 21.5 48 48s-21.5 48-48 48z"></path>
-              </svg>
               <span className="text-xs text-center">{text}</span>
             </div>
           </SwiperSlide>
