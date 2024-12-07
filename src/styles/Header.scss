@@ -4,13 +4,32 @@
     padding: 20px; 
     max-width: 100%; 
   }
+
+  .header-tabs {
+  padding-left: 0.3rem;
+  display: flex;
+  gap: 15px;
+
+  .tab a {
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+
+    &:hover {
+      color: #a52a2a;
+    }
+  }
+}
 .header-search-icon {      
     .head-search-12 {
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      margin-right: 4px;
+      margin-right: 2px;
+      border-radius: 7px;
     }
   
     .head-search-123 {
@@ -19,6 +38,7 @@
     }
 
     .head-search-12345{
+        border-radius: 4px;
         margin-left: 10px;
         width: 40px;
         height: 31px;
@@ -38,7 +58,7 @@
         font-size: 12px;
         line-height: 1.5;
     }
-  
+
     .search-dropdown {
       display: flex;
       align-items: center;
@@ -46,7 +66,7 @@
       margin-top: 10px;
       width: 100%;
       padding: 5px;
-      background-color: rgba(182, 47, 47, 0.9); 
+      background-color: rgba(54, 53, 53, 0.9); 
       border-radius: 5px;
       transition: opacity 0.3s ease-in-out;
     }
@@ -55,15 +75,9 @@
       padding: 10px;
       width: 250px;
       font-size: 14px;
-      border-radius: 5px;
-      border: 1px solid #b12020;
       outline: none;
-      background-color: rgb(39, 72, 163);
+      background-color: rgb(252, 252, 252);
       color: black;
-  
-      &:focus {
-        border-color: #b12020;
-      }
     }
   }
   
@@ -107,11 +121,10 @@
       display: flex;
       flex-wrap: wrap; 
       justify-content: flex-start; 
-      gap: 10px;
       max-width: 100%;
       
       .mega-tab-menu {
-        padding: 5px 15px;
+        // padding: 5px 15px;
         color: #333; 
         font-size: 16px; 
         font-weight: 500; 
@@ -123,6 +136,7 @@
         }
   
         a {
+          padding: 0.4rem;
           text-decoration: none; 
           color: inherit; 
         }
@@ -141,6 +155,11 @@
       padding: 3px 10px; 
     }
   }
+
+
+
+
+
 
 // .header-wrapper {
 //   background-color: #fff;

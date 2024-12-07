@@ -16,21 +16,21 @@ const Header = () => {
       <div className="container d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-between pb-0">
         
         <div className="d-none d-lg-block" id="tabs">
-          <div className="tab-set d-flex">
+          <div className="header-tabs tab-set d-flex">
             <div className="tab menu-active" id="women-nav">
-              <a href="#">Women</a>
+              <a href="#">WOMEN</a>
             </div>
             <div className="tab menu-active" id="men-nav">
-              <a href="#">Men</a>
+              <a href="#">MEN</a>
             </div>
             <div className="tab menu-active" id="kids-nav">
-              <a href="#">Kids</a>
+              <a href="#">KIDS</a>
             </div>
             <div className="tab menu-active" id="bridal-nav">
-              <a href="#">Bridal</a>
+              <a href="#">BRIDAL</a>
             </div>
             <div className="tab menu-active" id="luxe-nav">
-              <a href="#">Luxe</a>
+              <a href="#">LUXE</a>
             </div>
           </div>
         </div>
@@ -57,7 +57,9 @@ const Header = () => {
           <div className="d-flex align-items-center">
             {/* Search Input */}
             <div className="lg:inline-block header-search-icon flex items-center">
-              <div className="cursor-pointer head-search-12" onClick={() => setSearchOpen(!searchOpen)}>
+              <div className="cursor-pointer head-search-12" 
+              // onClick={() => setSearchOpen(!searchOpen)}
+              >
                 <div className="head-search-123">
                   <div className="head-search-1234">
                     Search for style, Collections & more
@@ -108,7 +110,7 @@ const Header = () => {
       </div>
     </div>
 
-    <div className="tabContent-list py-3 px-4 border shadow-xm p-0 mb-3">
+    <div className="tabContent-list py-1 px-4 border shadow-xm p-0 mb-3">
         <div className="tabContent d-flex flex-wrap justify-content-start gap-0">
           <div className="mega-tab-menu py-2 px-0 bg-white text-dark text-center">
             <a href="#">Bestseller</a>
