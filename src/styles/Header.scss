@@ -1,202 +1,5 @@
-// // Variables
-// $header-bg: #f5f5f5;
-// $text-color: #404040;
-// $hover-color: #333;
-// $icon-size: 20px;
-
-// // Mixins
-// @mixin flex-center {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
-
-// // Header Styling
-// #header {
-//   background-color: $header-bg;
-//   position: relative;
-//   z-index: 10;
-//   width: 100%;
-//   padding-bottom: 1rem;
-
-//   .container {
-//     @include flex-center;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-//   }
-
-//   .nav-tabs {
-//     display: flex;
-//     .tab {
-//       padding: 0.5rem 1rem;
-//       a {
-//         color: $text-color;
-//         text-decoration: none;
-//         &:hover {
-//           color: $hover-color;
-//         }
-//       }
-//       &.menu-active {
-//         border-bottom: 2px solid $text-color;
-//       }
-//     }
-//   }
-
-//   .menu-toggle {
-//     background: none;
-//     border: none;
-//     cursor: pointer;
-//     .menu-icon {
-//       font-size: $icon-size;
-//       color: $text-color;
-//     }
-//   }
-
-//   .header-logo {
-//     a {
-//       display: block;
-//       img {
-//         max-height: 3.375rem;
-//         width: auto;
-//       }
-//     }
-//   }
-
-//   .header-search-icon {
-//     position: relative;
-//     .head-search-12 {
-//       cursor: pointer;
-//       .head-search-123 {
-//         display: flex;
-//         align-items: center;
-//         gap: 0.5rem;
-//         font-size: 0.9rem;
-//         .head-search-12345 {
-//           font-size: $icon-size;
-//         }
-//       }
-//     }
-//     .search-dropdown {
-//       position: absolute;
-//       top: 100%;
-//       left: 0;
-//       background: white;
-//       border: 1px solid #ddd;
-//       input {
-//         width: 100%;
-//         padding: 0.5rem;
-//         border: none;
-//         border-bottom: 1px solid $text-color;
-//       }
-//     }
-//   }
-
-//   .header-video-shop {
-//     margin-left: 1rem;
-//     .head-icon-12345 {
-//       font-size: $icon-size;
-//       color: $text-color;
-//       &:hover {
-//         color: $hover-color;
-//       }
-//     }
-//   }
-
-//   .mobile-menu {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100vh;
-//     background: white;
-//     transform: translateX(-100%);
-//     transition: transform 0.3s ease-in-out;
-//     &.open {
-//       transform: translateX(0);
-//     }
-//     .close-menu {
-//       position: absolute;
-//       top: 1rem;
-//       right: 1rem;
-//       background: none;
-//       border: none;
-//       font-size: 1.5rem;
-//       cursor: pointer;
-//     }
-//     .menu-list {
-//       list-style: none;
-//       padding: 2rem;
-//       li {
-//         margin: 1rem 0;
-//         a {
-//           color: $text-color;
-//           text-decoration: none;
-//           &:hover {
-//             color: $hover-color;
-//           }
-//         }
-//       }
-//     }
-//   }
-
-//   .tabContent-list {
-//     display: none;
-//     &.show {
-//       display: block;
-//     }
-//     .tabContent {
-//       display: flex;
-//       flex-wrap: wrap;
-//       .mega-tab-menu {
-//         flex: 1 1 20%;
-//         text-align: center;
-//         padding: 0.5rem;
-//         background: white;
-//         a {
-//           color: $text-color;
-//           text-decoration: none;
-//           &:hover {
-//             color: $hover-color;
-//           }
-//         }
-//       }
-//     }
-//   }
-
-//   .header-search-small-screen {
-//     display: none;
-//     .search-bar-container {
-//       display: flex;
-//       input {
-//         flex: 1;
-//         padding: 0.5rem;
-//         border: 1px solid #ddd;
-//         border-radius: 4px 0 0 4px;
-//       }
-//       .search-icon-btn {
-//         background: $header-bg;
-//         border: none;
-//         padding: 0.5rem;
-//         border-radius: 0 4px 4px 0;
-//         cursor: pointer;
-//       }
-//     }
-//   }
-
-//   @media (max-width: 768px) {
-//     .header-search-small-screen {
-//       display: block;
-//     }
-//     .header-search-icon {
-//       display: none;
-//     }
-//   }
-// }
-
-
-
-
 .container {
+  display: flex !important;
   margin: auto;
   padding: 20px;
   max-width: 100%;
@@ -342,6 +145,7 @@
   }
 }
 
+
 .mobile-menu {
   display: none;
   border: none;
@@ -397,23 +201,64 @@
 .header-search-small-screen{
   display: none;
 }
+// .header-search {
+//   position: relative;
 
-/* Media Queries for Small Screens */
-@media only screen and (max-width: 768px) {
-  #whatsapp-icon {
-    display: none;
-  }
-}
+//   .search-toggle {
+//     display: flex;
+//     align-items: center;
+//     background-color: #f7f7f7;
+//     padding: 10px;
+//     border-radius: 5px;
+//     cursor: pointer;
+
+//     &:hover {
+//       background-color: #e5e5e5;
+//     }
+//   }
+
+//   .search-dropdown {
+//     background: #fff;
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//     padding: 20px;
+//     margin-top: 10px;
+
+//     .search-input {
+//       width: 100%;
+//       padding: 10px;
+//       font-size: 14px;
+//       border: 1px solid #ddd;
+//       border-radius: 5px;
+//     }
+
+//     .search-suggestions {
+//       .suggestion-item {
+//         padding: 10px;
+//         border-bottom: 1px solid #eee;
+//         cursor: pointer;
+
+//         &:hover {
+//           background-color: #f9f9f9;
+//         }
+//       }
+//     }
+//   }
+// }
+// @media only screen and (max-width: 768px) {
+//   #whatsapp-icon {
+//     display: none;
+//   }
+// }
 @media (max-width: 767px) {
-  
   .container {
-    display: flex;
+    display: flex !important;
     align-items: center;
+    flex-wrap: nowrap;
     justify-content: space-between;
     padding: 15px 15px;
   }
   .menu-toggle {
-    display: block;
+    display: flex !important;
     background: none;
     border: none;
     padding: 0;
@@ -438,6 +283,10 @@
       width: 22px;
     }
   }
+  #whatsapp-icon {
+    display: none;
+  }
+
   .search-dropdown {
     display: flex;
     align-items: center;

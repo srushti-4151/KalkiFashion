@@ -120,6 +120,8 @@ const VisitStore = () => {
   };
 
   return (
+    <div className="visitor-store-wrapper">
+    <div className="visitor-container">
     <Container className="visit-stores mt-3" style={{ padding: "0.700rem" }}>
       <h2 className="text-center mb-4">Visit our Stores</h2>
        <Row className="image-grid">
@@ -231,6 +233,8 @@ const VisitStore = () => {
       </Slider>
 
     </Container>
+    </div>
+    </div>
   );
 };
 

@@ -291,12 +291,14 @@ const Footer = () => {
             </Accordion>
           </Col>
         </Row>
+
+
         {/* Bottom Row */}
-        <Row className="mt-4 text-center">
+        {/* <Row className="mt-4 text-center">
           <Col xs={12}>
             <p>© 2007 - 2024 Kalkifashion All Rights Reserved.</p>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </footer>
   );

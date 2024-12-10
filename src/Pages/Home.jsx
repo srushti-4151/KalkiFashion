@@ -20,6 +20,7 @@ import Footer from '../Components/Footer';
 import KalkiDes from '../Components/KalkiDes';
 import ImageSlider5 from '../Components/ImageSlider5';
 import ImageSlider6 from '../Components/ImageSlider6';
+import VideoCom from '../Components/VideoCom';
 
 const Home = () => {
   return (
@@ -29,6 +30,7 @@ const Home = () => {
     <CarouselSlider />
     <Iconpart />
     <Section />
+    {/* <VideoCom /> */}
     <ImageSlider />
     <ImageSlider2 />
     <Banner />
