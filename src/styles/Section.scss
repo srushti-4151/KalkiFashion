@@ -1,21 +1,23 @@
-.home-section {
-    padding: 0.8rem;
-      
+
+  .home-section {
+    padding: 1.4rem;
+    
     .image-row {
       .image-col {
-  
+        padding: 0.4rem;
+        
         .card {
           position: relative;
           overflow: hidden;
           border: none;
           border-radius: 0;
-  
+          
           .card-img {
             width: 100%;
             height: auto;
             border-radius: 0;
           }
-  
+          
           .card-overlay {
             position: absolute;
             top: 0;
@@ -61,6 +63,7 @@
       }
     }
   }
+
   
   // .home-section {
   //   padding: 2rem;

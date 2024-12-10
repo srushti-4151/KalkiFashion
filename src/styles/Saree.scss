@@ -136,7 +136,7 @@
 
     .left-section {
       display: flex;
-      flex-direction: column; 
+      flex-direction: row; 
       align-items: center;
       width: 100%; 
       gap: 1rem;
@@ -180,18 +180,24 @@
     .right-section {
       width: 100%; 
       margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: end;
       text-align: center;
 
       .text-content {
         .title {
           font-size: 1.8rem;
+          color: rgb(117, 27, 27);
         }
 
         .subtitle {
+          color: rgb(117, 27, 27);
           font-size: 1.5rem;
         }
 
         .product-name {
+          color: rgb(117, 27, 27);
           font-size: 1rem;
         }
 

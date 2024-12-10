@@ -1,122 +1,306 @@
-import React from "react";
-import "../styles/Footer.scss"; 
-import { BsInstagram } from "react-icons/bs";
-import { SiWhatsapp } from "react-icons/si";
-import { FaFacebookF } from "react-icons/fa6";
-import { BsYoutube } from "react-icons/bs";
-import { SiPinterest } from "react-icons/si";
-import { FaXTwitter } from "react-icons/fa6";
+import React from 'react';
+import { Container, Row, Col, Accordion } from 'react-bootstrap';
+import '../styles/Footer.scss';
+import { FaInstagram,FaFacebookF, FaWhatsapp, FaYoutube,FaPinterest    } from "react-icons/fa";
+import { RiTwitterXLine } from "react-icons/ri";
 
 
 const Footer = () => {
   return (
-    <>Footer</>
-    // <footer className="footer">
-    //   <div className="container">
+    <footer className="main-footer py-5">
+      <Container className='footer-container'>
+        {/* Main Footer Sections */}
+        <Row>
+          {/* Designer Wear Section */}
+          <Col xs={12} md={3} lg={2}>
+            <Accordion className="d-block d-md-none">
+              <Accordion.Item eventKey="0">
+                <Accordion.Header>Designer Wear</Accordion.Header>
+                <Accordion.Body>
+                  <div className="footer-links">
+                    <a href="/">Salwar Kameez</a>
+                    <a href="/">Sarees</a>
+                    <a href="/">Lehengas</a>
+                    <a href="/">Gowns</a>
+                    <a href="/">Kidswear</a>
+                    <a href="/">Saree Blouse</a>
+                    <a href="/">Kurtis</a>
+                    <a href="/">Indowestern Styles</a>
+                    <a href="/">Mens</a>
+                    <a href="/">Accessories</a>
+                    <a href="/">KALKI Influencers</a>
+                    <a href="/">Celebrity Wear</a>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+            <div className="d-none d-md-block">
+              <h4>Designer Wear</h4>
+              <div className="footer-links">
+                <a href="/">Salwar Kameez</a>
+                <a href="/">Sarees</a>
+                <a href="/">Lehengas</a>
+                <a href="/">Gowns</a>
+                <a href="/">Kidswear</a>
+                <a href="/">Saree Blouse</a>
+                <a href="/">Kurtis</a>
+                <a href="/">Indowestern Styles</a>
+                <a href="/">Mens</a>
+                <a href="/">Accessories</a>
+                <a href="/">KALKI Influencers</a>
+                <a href="/">Celebrity Wear</a>
+              </div>
+            </div>
+          </Col>
 
-    //     <div className="row">
-    //       <div className="col-6 col-lg-2">
-    //         <h5>DESIGNER WEAR</h5>
-    //         <ul className="list-unstyled">
-    //           <li><a href="#">Salwar Kameez</a></li>
-    //           <li><a href="#">Sarees</a></li>
-    //           <li><a href="#">Lehengas</a></li>
-    //           <li><a href="#">Gowns</a></li>
-    //           <li><a href="#">Kidswear</a></li>
-    //           <li><a href="#">Saree Blouse</a></li>
-    //           <li><a href="#">Kurtis</a></li>
-    //           <li><a href="#">Indowestern Styles</a></li>
-    //           <li><a href="#">Mens</a></li>
-    //           <li><a href="#">Accessories</a></li>
-    //           <li><a href="#">KALKI Influencers</a></li>
-    //           <li><a href="#">Celebrity Wear</a></li>
-    //           <li><a href="#">Bridal Dresses</a></li>
-    //           <li><a href="#">Zayra Collection</a></li>
-    //           <li><a href="#">Inara Collection</a></li>
-    //         </ul>
-    //       </div>
-    //       <div className="col-6 col-lg-2">
-    //         <h5>ABOUT US</h5>
-    //         <ul className="list-unstyled">
-    //           <li><a href="#">About Us</a></li>
-    //           <li><a href="#">Contact Us</a></li>
-    //           <li><a href="#">Blog</a></li>
-    //           <li><a href="#">Web Stories</a></li>
-    //           <li><a href="#">Testimonial</a></li>
-    //           <li><a href="#">Press</a></li>
-    //           <li><a href="#">Lookbook</a></li>
-    //           <li><a href="#">Careers</a></li>
-    //           <li><a href="#">KALKI Boutique</a></li>
-    //           <li><a href="#">KALKI Fashion Show</a></li>
-    //           <li><a href="#">Video Call Appointment</a></li>
-    //           <li><a href="#">Buying Guide</a></li>
-    //         </ul>
-    //       </div>
-    //       <div className="col-6 col-lg-2">
-    //         <h5>POLICIES</h5>
-    //         <ul className="list-unstyled">
-    //           <li><a href="#">Terms & Conditions</a></li>
-    //           <li><a href="#">Shipping</a></li>
-    //           <li><a href="#">Returns</a></li>
-    //           <li><a href="#">Privacy Policy</a></li>
-    //           <li><a href="#">Privacy Policy For APP</a></li>
-    //           <li><a href="#">Payment Policy</a></li>
-    //           <li><a href="#">FAQ's</a></li>
-    //           <li><a href="#">Customization Charges</a></li>
-    //         </ul>
-    //       </div>
-    //       <div className="col-6 col-lg-2">
-    //         <h5>MY ACCOUNT</h5>
-    //         <ul className="list-unstyled">
-    //           <li><a href="#">Shopping Bag</a></li>
-    //           <li><a href="#">Wishlist</a></li>
-    //           <li><a href="#">Order History</a></li>
-    //           <li><a href="#">Order Tracking</a></li>
-    //           <li><a href="#">Buy In Bulk</a></li>
-    //         </ul>
-    //       </div>
+          {/* About Us Section */}
+          <Col xs={12} md={3} lg={2}>
+            <Accordion className="d-block d-md-none">
+              <Accordion.Item eventKey="1">
+                <Accordion.Header>About Us</Accordion.Header>
+                <Accordion.Body>
+                  <div className="footer-links">
+                    <a href="/about-us">About Us</a>
+                    <a href="/contact">Contact Us</a>
+                    <a href="/">Blog</a>
+                    <a href="/">Web Stories</a>
+                    <a href="/">Testimonial</a>
+                    <a href="/">Press</a>
+                    <a href="/">Lookbook</a>
+                    <a href="/">Careers</a>
+                    <a href="/">KALKI Boutique</a>
+                    <a href="/">KALKI Fashion Show</a>
+                    <a href="/">Video Call Appointment</a>
+                    <a href="/">Buying Guide</a>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+            <div className="d-none d-md-block">
+              <h4>About Us</h4>
+              <div className="footer-links">
+                <a href="/about-us">About Us</a>
+                <a href="/contact">Contact Us</a>
+                <a href="/">Blog</a>
+                <a href="/">Web Stories</a>
+                <a href="/">Testimonial</a>
+                <a href="/">Press</a>
+                <a href="/">Lookbook</a>
+                <a href="/">Careers</a>
+                <a href="/">KALKI Boutique</a>
+                <a href="/">KALKI Fashion Show</a>
+                <a href="/">Video Call Appointment</a>
+                <a href="/">Buying Guide</a>
+              </div>
+            </div>
+          </Col>
 
-    //       {/* Payment and App Links */}
-    //       <div className="col-6 col-lg-4">
-    //         <h5>SAFE & SECURE PAYMENT</h5>
-    //         <div className="payment-icons">
-    //           <img src="visa.png" alt="Visa" />
-    //           <img src="mastercard.png" alt="MasterCard" />
-    //           <img src="cash.png" alt="Cash on Delivery" />
-    //           <img src="upi.png" alt="UPI" />
-    //           <img src="rupay.png" alt="RuPay" />
-    //           <img src="amex.png" alt="American Express" />
-    //         </div>
-    //         <h5>EXPERIENCE KALKI APP ON MOBILE</h5>
-    //         <div className="app-links">
-    //           <img src="google-play.png" alt="Google Play" />
-    //           <img src="app-store.png" alt="App Store" />
-    //         </div>
-    //           <h5>FOLLOW US</h5>
-    //           <div className="social-icons">
-    //             <a href="#"><BsInstagram /></a>
-    //             <a href="#"><i className="fab fa-instagram"></i></a>
-    //             <a href="#"><i className="fab fa-whatsapp"></i></a>
-    //             <a href="#"><i className="fab fa-youtube"></i></a>
-    //             <a href="#"><i className="fab fa-pinterest"></i></a>
-    //             <a href="#"><i className="fab fa-twitter"></i></a>
-    //           <h5>GET IN TOUCH</h5>
-    //           <p>+91 (22) 4890 0416 (INDIA)</p>
-    //           <p>+1 (408) 520 9415 (US)</p>
-    //           <p>+44 (20) 7193 0887 (UK)</p>
-    //           <p>+61 (02) 8006 4667 (AUS)</p>
-    //         </div>
-    //         <div className="col-12 col-lg-3">
-    //           <h5>EMAIL US ON</h5>
-    //           <p>info@kalkifashion.com</p>
-    //         </div>
-    //       </div>
-    //     </div>
+          {/* Policies Section */}
+          <Col xs={12} md={3} lg={2}>
+            <Accordion className="d-block d-md-none">
+              <Accordion.Item eventKey="2">
+                <Accordion.Header>Policies</Accordion.Header>
+                <Accordion.Body>
+                  <div className="footer-links">
+                    <a href="/">Terms & Conditions</a>
+                    <a href="/">Shipping</a>
+                    <a href="/">Returns</a>
+                    <a href="/">Privacy Policy</a>
+                    <a href="/">Privacy Policy For App</a>
+                    <a href="/">Payment Policy</a>
+                    <a href="/">FAQs</a>
+                    <a href="/">Customization Charges</a>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+            <div className="d-none d-md-block">
+              <h4>Policies</h4>
+              <div className="footer-links">
+                <a href="/">Terms & Conditions</a>
+                <a href="/">Shipping</a>
+                <a href="/">Returns</a>
+                <a href="/">Privacy Policy</a>
+                <a href="/">Privacy Policy For App</a>
+                <a href="/">Payment Policy</a>
+                <a href="/">FAQs</a>
+                <a href="/">Customization Charges</a>
+              </div>
+            </div>
+          </Col>
 
-        
-    //   </div>
-    // </footer>
+          {/*My Accont Section */}
+          <Col xs={12} md={3} lg={2}>
+            <Accordion className="d-block d-md-none">
+              <Accordion.Item eventKey="1">
+                <Accordion.Header>MY ACCOUNT</Accordion.Header>
+                <Accordion.Body>
+                  <div className="footer-links">
+                    <a href="/">Shopping Bog</a>
+                    <a href="/">Whichlist</a>
+                    <a href="/">Order History</a>
+                    <a href="/">Order Tracking</a>
+                    <a href="/">Buy In Bulk</a>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+            <div className="d-none d-md-block">
+              <h4>MY ACCOUNT</h4>
+              <div className="footer-links">
+              <a href="/">Shopping Bog</a>
+                    <a href="/">Whichlist</a>
+                    <a href="/">Order History</a>
+                    <a href="/">Order Tracking</a>
+                    <a href="/">Buy In Bulk</a>
+              </div>
+            </div>
+          </Col>
+
+          {/* Safe & Secure Payment Section */}
+          <Col xs={12} md={5} lg={4}>
+                <Accordion className="d-block d-md-none">
+                  <Accordion.Item eventKey="3">
+                    <Accordion.Header>Safe & Secure Payment</Accordion.Header>
+                    <Accordion.Body>
+                      <div className="payment-icons">
+                      <img src="https://staticm247.kalkifashion.com/media/wysiwyg/secure-payment-India-new-1.png" alt="Mastercard" />
+                      </div>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+                <div className="d-none d-md-block">
+                  <h4>Safe & Secure Payment</h4>
+                  <div className="payment-icons">
+                    <img src="https://staticm247.kalkifashion.com/media/wysiwyg/secure-payment-India-new-1.png" alt="Mastercard" />
+                  </div>
+                </div>
+                <div className="d-none d-md-block mt-3">
+                  <h4>EXPERIENCE KALKI APP ON MOBILE</h4>
+                  <div className="mobile-icons">
+                    <div className='con'>
+                    <img src="https://staticm247.kalkifashion.com/media/wysiwyg/google-play.png" alt="Mastercard" />
+                    <img src="https://staticm247.kalkifashion.com/media/wysiwyg/app-store.png" alt="Mastercard" />
+                    </div>
+                  </div>
+                </div>
+                <div className="d-none d-md-block mt-3">
+                  <h4>Follow Us</h4>
+                    <div className="social-icons">
+                      <a href="https://instagram.com">
+                        <FaInstagram size={20}/>
+                      </a>
+                      <a href="https://facebook.com">
+                        <FaFacebookF size={20}/>
+                      </a>
+                      <a href="https://twitter.com">
+                        <FaWhatsapp size={20}/>
+                      </a>
+                      <a href="https://pinterest.com">
+                        <FaYoutube size={20}/>
+                      </a>
+                      <a href="https://pinterest.com">
+                        <FaPinterest size={20}/>
+                      </a>
+                      <a href="https://pinterest.com">
+                        <RiTwitterXLine size={20}/>
+                      </a>
+                    </div>
+                </div>
+                <div className="d-none d-md-block mt-4">
+                  <div className='no-email'> 
+                    <div className='part1'>
+                      <h4>Get In Touch</h4>
+                      <p className='m-0'>+91 (22) 4890 0416 (India)</p>
+                      <p className='m-0'>+1 (408) 520 9415(US)</p>
+                      <p className='m-0'>+44 (20) 7193 0887 (UK)</p>
+                      <p className='m-0'>+61 (02) 8006 4667 (AUS)</p>
+                    </div>
+                    <div className='part2'>
+                      <h4>Email</h4>
+                      <p>info@kalkifashion.com</p>
+                    </div>
+                  </div>
+                </div>
+          </Col>
+          {/* Follow Us Section */}
+          <Col xs={12} md={3} lg={2} className="order-last">
+            <Accordion className="d-block d-md-none">
+              <Accordion.Item eventKey="4">
+                <Accordion.Header>Follow Us</Accordion.Header>
+                <Accordion.Body>
+                  <div className="social-icons">
+                  <a href="https://instagram.com">
+                        <FaInstagram size={20}/>
+                      </a>
+                      <a href="https://facebook.com">
+                        <FaFacebookF size={20}/>
+                      </a>
+                      <a href="https://twitter.com">
+                        <FaWhatsapp size={20}/>
+                      </a>
+                      <a href="https://pinterest.com">
+                        <FaYoutube size={20}/>
+                      </a>
+                      <a href="https://pinterest.com">
+                        <FaPinterest size={20}/>
+                      </a>
+                      <a href="https://pinterest.com">
+                        <RiTwitterXLine size={20}/>
+                      </a>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+          </Col>
+          {/* EXPERIENCE KALKI APP ON MOBILE */}
+          <Col xs={12} md={3} lg={2} className="order-last">
+            <Accordion className="d-block d-md-none">
+              <Accordion.Item eventKey="4">
+                <Accordion.Header>EXPERIENCE KALKI APP ON MOBILE</Accordion.Header>
+                <Accordion.Body>
+                <div className="mobile-icons">
+                    <div className='con'>
+                    <img src="https://staticm247.kalkifashion.com/media/wysiwyg/google-play.png" alt="Mastercard" />
+                    <img src="https://staticm247.kalkifashion.com/media/wysiwyg/app-store.png" alt="Mastercard" />
+                    </div>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+          </Col>
+          {/* EXPERIENCE KALKI APP ON MOBILE */}
+          <Col xs={12} md={3} lg={2} className="order-last">
+            <Accordion className="d-block d-md-none">
+              <Accordion.Item eventKey="4">
+                <Accordion.Header>GET IN TOUCh</Accordion.Header>
+                <Accordion.Body>
+                <div className='no-email'> 
+                    <div className='part1'>
+                      <p className='m-0'>+91 (22) 4890 0416 (India)</p>
+                      <p className='m-0'>+1 (408) 520 9415(US)</p>
+                      <p className='m-0'>+44 (20) 7193 0887 (UK)</p>
+                      <p className='m-0'>+61 (02) 8006 4667 (AUS)</p>
+                    </div>
+                    <div className='part2'>
+                      <p>info@kalkifashion.com</p>
+                    </div>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+          </Col>
+        </Row>
+        {/* Bottom Row */}
+        <Row className="mt-4 text-center">
+          <Col xs={12}>
+            <p>© 2007 - 2024 Kalkifashion All Rights Reserved.</p>
+          </Col>
+        </Row>
+      </Container>
+    </footer>
   );
 };
 
 export default Footer;
+

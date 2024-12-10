@@ -5,6 +5,7 @@ import "../styles/CardSlider.scss";
 const CardSlider = () => {
   const cardData = [
     {
+      id: 1,
       image: "https://staticm247.kalkifashion.com/media/wysiwyg/400px--533px-9-5-23-romika.jpg?aio-w=220", 
       name: "Carolina Rabinovich",
       country: "USA",
@@ -13,6 +14,7 @@ const CardSlider = () => {
       button: "View Product",
     },
     {
+      id: 2,
       image: "https://staticm247.kalkifashion.com/media/wysiwyg/400px--533px-9-5-23-romika.jpg?aio-w=220", 
       name: "Nakita and Chris",
       country: "Australia",
@@ -21,6 +23,16 @@ const CardSlider = () => {
       button: "View Product",
     },
     {
+      id: 3,
+      image: "https://staticm247.kalkifashion.com/media/wysiwyg/400px--533px-9-5-23-romika.jpg?aio-w=220", 
+      name: "Nakita and Chris",
+      country: "Australia",
+      quote:
+        "Kalki made our wedding attire hunt a breeze! Stunning designs, impeccable service. Can't wait for more photos in our Kalki outfits.",
+      button: "View Product",
+    },
+    {
+      id: 4,
         image: "https://staticm247.kalkifashion.com/media/wysiwyg/400px--533px-9-5-23-romika.jpg?aio-w=220", 
         name: "Nakita and Chris",
         country: "Australia",
@@ -29,14 +41,7 @@ const CardSlider = () => {
         button: "View Product",
       },
       {
-        image: "https://staticm247.kalkifashion.com/media/wysiwyg/400px--533px-9-5-23-romika.jpg?aio-w=220", 
-        name: "Nakita and Chris",
-        country: "Australia",
-        quote:
-          "Kalki made our wedding attire hunt a breeze! Stunning designs, impeccable service. Can't wait for more photos in our Kalki outfits.",
-        button: "View Product",
-      },
-      {
+        id: 5,
         image: "https://staticm247.kalkifashion.com/media/wysiwyg/400px--533px-9-5-23-romika.jpg?aio-w=220", 
         name: "Nakita and Chris",
         country: "Australia",
@@ -105,4 +110,5 @@ const CardSlider = () => {
   );
 };
 
-export default CardSlider;
+export default CardSlider; 
+

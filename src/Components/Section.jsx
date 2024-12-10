@@ -6,6 +6,7 @@ import '../styles/Section.scss';
 const Section = () => {
   return (
     <>
+    <div className='section-container'>
     <Container fluid className="home-section">
       {/* Image Grid */}
       <Row className="image-row">
@@ -18,7 +19,6 @@ const Section = () => {
             />
             <div className="card-overlay">
               <h4>24 Hr Dispatch</h4>
-              <p>Last Minute Shopping</p>
               <button className="shop-now-btn">SHOP NOW</button>
             </div>
           </div>
@@ -32,7 +32,6 @@ const Section = () => {
             />
             <div className="card-overlay">
               <h4>Celebratory Luxe</h4>
-              <p>Showstopper Vibes, Chic Styles</p>
               <button className="shop-now-btn">SHOP NOW</button>
             </div>
           </div>
@@ -46,7 +45,6 @@ const Section = () => {
             />
             <div className="card-overlay">
               <h4>Bestsellers Haul</h4>
-              <p>Fits Everyone's Vibing With</p>
               <button className="shop-now-btn">SHOP NOW</button>
             </div>
           </div>
@@ -60,13 +58,13 @@ const Section = () => {
             />
             <div className="card-overlay">
               <h4>Shaadi Menswear</h4>
-              <p>Sharp & Sleek Charm For Him</p>
               <button className="shop-now-btn">SHOP NOW</button>
             </div>
           </div>
         </Col>
       </Row>
     </Container>
+    </div>
     </>
   );
 };

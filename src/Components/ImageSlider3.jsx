@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import "../styles/ImageSlider2.scss"; 
+import "../styles/ImageSlider.scss"; 
 import { FaChevronLeft } from "react-icons/fa6";
 import { FaChevronRight } from "react-icons/fa6";
 
@@ -10,7 +10,7 @@ const CustomPrevArrow = ({ className, style, onClick }) => (
     style={{ ...style, display: "block" }}
     onClick={onClick}
   >
-    <FaChevronRight className="chevron-icon chevron-icon-prev"/>
+    <FaChevronLeft className="slick-prev chevron-icon chevron-icon-prev" />
   </button>
 );
 
@@ -20,7 +20,7 @@ const CustomNextArrow = ({ className, style, onClick }) => (
     style={{ ...style, display: "block" }}
     onClick={onClick}
   >
-    <FaChevronLeft className="chevron-icon chevron-icon-prev"/>
+    <FaChevronRight className="chevron-icon slick-next chevron-icon-next" />
   </button>
 );
 
@@ -55,7 +55,7 @@ const ImageSlider3 = () => {
       {
         breakpoint: 576,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           dots: true,
         },

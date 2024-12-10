@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import '../styles/CardSection.scss'; 
 import { PiDressThin } from "react-icons/pi";
+import { TbDeviceMobileMessage } from "react-icons/tb";
+
 
 const CardSection = () => {
   const [bookAnAppointment, setBookAnAppointment] = useState(false);
@@ -13,6 +15,7 @@ const CardSection = () => {
 
   return (
     <>
+    <div className='shop-section'>
     <section
       className="shop-video-call-section"
       style={{
@@ -25,7 +28,7 @@ const CardSection = () => {
           <Container fluid>
             <Row className="d-flex justify-content-center">
               <Col xs={12} sm={6} className="text-center py-6 px-4">
-                <PiDressThin className="mx-auto mb-10 empty-bg svg1"/>
+                <PiDressThin size={40} className="mx-auto mb-10 empty-bg svg1"/>
                 <h2 className="font-serif font-medium">
                   Shop via video call
                 </h2>
@@ -42,7 +45,7 @@ const CardSection = () => {
                 </Button>
               </Col>
               <Col xs={12} sm={6} className="text-center py-6 px-4">
-              <PiDressThin className="mx-auto mb-10 empty-bg svg1"/>
+              <PiDressThin size={40} className="mx-auto mb-10 empty-bg svg1"/>
                 <h2 className="font-serif font-medium mb-2.5">
                   The bridal stylist
                 </h2>
@@ -63,6 +66,7 @@ const CardSection = () => {
         </div>
       )}
     </section>
+    </div>
     </>
   );
 };

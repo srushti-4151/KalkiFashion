@@ -10,16 +10,16 @@ import ImageSlider from '../Components/ImageSlider';
 import ImageSlider2 from '../Components/ImageSlider2';
 import Banner from '../Components/Banner';
 import Bridal from '../Components/Bridal';
-import Section2 from '../Components/Section2';
 import ImageSlider3 from '../Components/ImageSlider3';
 import ImageSlider4 from '../Components/ImageSlider4';
-import Section3 from '../Components/Section3';
 import CardSection from '../Components/CardSection';
 import InstaSction from '../Components/InstaSction';
 import VisitStore from '../Components/VisitStore';
 import CardSlider from '../Components/CardSlider';
 import Footer from '../Components/Footer';
 import KalkiDes from '../Components/KalkiDes';
+import ImageSlider5 from '../Components/ImageSlider5';
+import ImageSlider6 from '../Components/ImageSlider6';
 
 const Home = () => {
   return (
@@ -36,9 +36,9 @@ const Home = () => {
     <EditorsPicks />
     <ImageSlider4 />
     <Saree/>
-    <Section2 />
+    <ImageSlider5/>
     <Bridal />
-    <Section3 />
+    <ImageSlider6/>
     <CardSection />
     <InstaSction />
     <VisitStore />
