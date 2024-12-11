@@ -15,7 +15,7 @@ const CardSlider = () => {
     },
     {
       id: 2,
-      image: "https://staticm247.kalkifashion.com/media/wysiwyg/400px--533px-9-5-23-romika.jpg?aio-w=220", 
+      image: "https://staticm247.kalkifashion.com/media/wysiwyg/400px--533px-23-12-23-2.jpg?aio-w=125", 
       name: "Nakita and Chris",
       country: "Australia",
       quote:
@@ -24,7 +24,7 @@ const CardSlider = () => {
     },
     {
       id: 3,
-      image: "https://staticm247.kalkifashion.com/media/wysiwyg/400px--533px-9-5-23-romika.jpg?aio-w=220", 
+      image: "https://staticm247.kalkifashion.com/media/wysiwyg/400px--533px-23-12-23-us-cust.jpg?aio-w=220", 
       name: "Nakita and Chris",
       country: "Australia",
       quote:
@@ -42,7 +42,7 @@ const CardSlider = () => {
       },
       {
         id: 5,
-        image: "https://staticm247.kalkifashion.com/media/wysiwyg/400px--533px-9-5-23-romika.jpg?aio-w=220", 
+        image: "https://staticm247.kalkifashion.com/media/wysiwyg/400px--533px-23-12-23-us-cust-1.jpg?aio-w=220", 
         name: "Nakita and Chris",
         country: "Australia",
         quote:

@@ -1,6 +1,4 @@
 import React from 'react'
-import TopSlider from '../Components/TopSlider'
-import Header from '../Components/Header';
 import CarouselSlider from '../Components/CarouselSlider';
 import Section from '../Components/Section';
 import Iconpart from '../Components/Iconpart';
@@ -16,7 +14,6 @@ import CardSection from '../Components/CardSection';
 import InstaSction from '../Components/InstaSction';
 import VisitStore from '../Components/VisitStore';
 import CardSlider from '../Components/CardSlider';
-import Footer from '../Components/Footer';
 import KalkiDes from '../Components/KalkiDes';
 import ImageSlider5 from '../Components/ImageSlider5';
 import ImageSlider6 from '../Components/ImageSlider6';
@@ -25,8 +22,6 @@ import VideoCom from '../Components/VideoCom';
 const Home = () => {
   return (
     <>
-    <TopSlider />
-    <Header />
     <CarouselSlider />
     <Iconpart />
     <Section />
@@ -46,7 +41,6 @@ const Home = () => {
     <VisitStore />
     <CardSlider/>
     <KalkiDes />
-    <Footer />
     </>
   )
 }

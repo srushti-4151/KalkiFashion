@@ -18,7 +18,7 @@ const EditorsPicks = () => {
   ];
 
   return (
-    <Container fluid className="editors-picks-section py-5">
+    <Container fluid className="editors-picks-section pt-2 pb-4">
       <h2 className="text-center mb-4">Editor's Picks</h2>
       <Row className="g-3">
         {picks.map((pick, index) => (

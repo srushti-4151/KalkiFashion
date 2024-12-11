@@ -1,0 +1,438 @@
+
+.bridal-section {
+    overflow: hidden;
+    position: relative;
+  
+    .video {
+      video {
+        width: 100%;
+        height: auto;
+      }
+  
+      .desktop-video {
+        display: none;
+      }
+  
+      .mobile-video {
+        display: block;
+      }
+  
+      @media (min-width: 1200px) {
+        .desktop-video {
+          display: block;
+        }
+        .mobile-video {
+          display: none;
+        }
+      }
+    }
+  
+    .button-wrapper {
+      position: absolute;
+      bottom: 28px;
+      width: 100%;
+      text-align: center;
+  
+      a {
+        background-color: black;
+        padding: 0.6rem 1rem;
+        text-decoration: underline;
+        color: white;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+
+.bridal-banner-section {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  
+    // Image styling for both desktop and mobile
+    .bridal-picture img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  
+    // The "See All" button and text styling
+    .bridal-button-col {
+      position: absolute;
+      bottom: 12%;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .bridal-button {
+      font-size: 16px;
+      color: #fff;
+      text-decoration: underline;
+      background-color: black;
+      border: none;
+  
+      &:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+  
+    // Responsive styling for the mobile view
+    @media (max-width: 767px) {
+      .bridal-container {
+        padding: 0;
+      }
+  
+      .bridal-button-col {
+        bottom: 15%;
+      }
+  
+      .bridal-button {
+        font-size: 14px;
+      }
+    }
+  
+    // Desktop view
+    @media (min-width: 768px) {
+      .bridal-container {
+        padding: 0;
+      }
+  
+      .bridal-button-col {
+        bottom: 12%;
+      }
+  
+      .bridal-button {
+        font-size: 18px;
+      }
+    }
+  }
+  
+.bridal-page-section {
+   .container-fluid {
+     padding-left: 0 !important;
+     padding-right: 0 !important;
+    }
+    position: relative;
+    overflow: hidden;
+    width: 100%; 
+  
+    .instagram-link {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      position: relative;
+    }
+    .bridal-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  
+    @media (max-width: 767px) {
+      .bridal-image {
+        max-width: 100%;
+      }
+    }
+  
+    @media (min-width: 768px) {
+      .bridal-image {
+        max-width: 100%;
+      }
+    }
+}
+  
+.bridal-jewelry-section {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .row-full-width-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .content-container {
+  
+      @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3rem;
+      }
+    }
+  
+    .video-container {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+  
+      .video {
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+  
+    .text-container {
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+      padding: 2rem;
+      text-align: center;
+  
+      @media (max-width: 767px) {
+        padding: 1rem;
+        width: 100%;
+      }
+  
+      @media (min-width: 768px) {
+        justify-content: flex-start;
+        padding: 2rem 3rem;
+      }
+    }
+  
+    .text-content {
+      width: 100%;
+      max-width: 90%; // Equivalent to cmsp276-xl:w-[60%]
+      margin: 0 auto;
+  
+      .title {
+        font-size: 1.5rem; // Equivalent to cmsp276-text-base
+        line-height: 1; // Equivalent to cmsp276-leading-6
+        text-transform: uppercase;
+        color: #000;
+        margin-bottom: 1rem;
+  
+        @media (min-width: 768px) {
+          font-size: 2rem; // Equivalent to cmsp276-md:text-2xl
+          line-height: 2; // Equivalent to cmsp276-md:leading-8
+          letter-spacing: 2px; // Equivalent to cmsp276-md:tracking-[2px]
+        }
+      }
+  
+      .view-collection {
+        transition: color 0.3s ease;
+        background-color: black;
+        color: white;
+        border-radius: 25px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+
+.bridal-video{
+.container-fluid {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    padding: 0;
+  }
+  
+  .videoHeightShort {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+  
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  .text-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+  
+    @media (min-width: 768px) {
+      font-size: 1.3rem;
+    }
+  }
+  
+  button.darkBtn {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #333;
+    }
+  }
+  
+  .fullBorderRad {
+    border-radius: 25px;
+  }
+  
+  .pt-2 {
+    padding-top: 0.5rem;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .justify-content-center {
+    justify-content: center;
+  }
+  
+  @media (min-width: 768px) {
+    .col-md-4 {
+      flex: 0 0 33.33%;
+    }
+  
+    .videoHeightShort {
+      height: 500px;
+    }
+  }
+  
+}
+
+.youtbe-section{
+
+.wedding-text {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  
+    @media (min-width: 768px) {
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+    }
+  
+    h2 {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 1rem;
+  
+      @media (min-width: 768px) {
+        margin-top: 4rem;
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+      }
+    }
+  }
+  
+  .button-for-discover-black {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #333;
+    }
+  }
+  
+  .video-wrapper {
+    iframe {
+      width: 100%;
+      max-height: 300px;  
+    }
+  }
+  
+  .row-full-width-inner {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+  } 
+}
+
+.text-part{
+    padding: 0 2rem 0 2rem;
+.category-description {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  
+    .section-title {
+      text-align: left;
+      font-size: 24px;
+      margin-bottom: 1.75rem;
+    }
+  
+    .section-text {
+      text-align: left;
+      margin-bottom: 1.5rem;
+      a{
+        color: rgb(134, 26, 26);
+      }
+    }
+  
+    .section-list {
+      margin-left: 20px;
+      list-style: disc;
+      padding-left: 10px;
+      
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  
+    .read-more-button {
+      cursor: pointer;
+      color: rgb(0, 0, 0);
+      text-decoration: underline;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .text-part{
+        padding: 0;
+        .category-description {
+            .section-title {
+                font-size: 20px;
+            }
+            
+            .section-text {
+                font-size: 16px;
+            }
+        }
+    }
+  }
+}

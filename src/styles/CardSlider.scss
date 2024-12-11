@@ -86,9 +86,10 @@
       padding-top: 1.2rem;
       
       .custom-dot {
-        width: 0.2rem;
-        height: 0.7rem;
-        background-color: rgba(0, 0, 0, 0.5);
+        all: unset;
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: rgba(0, 0, 0, 0.2);
         border-radius: 50%;
         border: none;
         cursor: pointer;

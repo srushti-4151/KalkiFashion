@@ -1,4 +1,3 @@
-
 .custom-slider {
   padding: 0.8rem;
   position: relative;
@@ -45,9 +44,10 @@
     padding: 0;
     
     .custom-dot {
-      width: 0.1rem;
-      height: 0.7rem;
-      background-color: rgba(0, 0, 0, 0.5);
+      all: unset;
+      width: 0.5rem !important;
+      height: 0.5rem !important;
+      background-color: rgba(0, 0, 0, 0.2);
       border-radius: 50%;
       border: none;
       cursor: pointer;
@@ -62,4 +62,33 @@
       background-color: rgba(0, 0, 0, 0.8);
     }
   }
+    // .slick-dots {
+    //   display: flex !important;
+    //   justify-content: center; 
+    //   align-items: center;
+    //   list-style: none;
+    //   margin: 1rem 0;
+  
+    //   li {
+    //     margin: 0 4px; 
+  
+    //     button {
+    //       width: 0.2rem; 
+    //       height: 0.2rem; 
+    //       border-radius: 50%; 
+    //       background-color: rgba(0, 0, 0, 0.5);
+    //       border: none;
+    //       cursor: pointer;
+    //       transition: background-color 0.3s ease;
+  
+    //       &:hover {
+    //         background-color: rgba(0, 0, 0, 0.8); 
+    //       }
+    //     }
+  
+    //     &.slick-active button {
+    //       background-color: #000; /* Active dot color */
+    //     }
+    //   }
+    // }  
 }
