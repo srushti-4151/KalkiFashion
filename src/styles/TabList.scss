@@ -4,6 +4,10 @@
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     font-family: 'Lexend', sans-serif;
+
+    .content-center{
+      display: flex;
+      justify-content: start;
   
     .mega-tab-menu {
       position: relative; 
@@ -137,4 +141,4 @@
       }
     }
   }
-  
+}

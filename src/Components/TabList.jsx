@@ -4,6 +4,7 @@ import "../styles/TabList.scss";
 const TabList = () => {
   return (
     <nav id="desktop-nav">
+        <div className='content-center'>
       <div className="mega-tab-menu">
         <a className="mega-tab-menu-parent-link" href="#">
           BESTSELLER
@@ -773,7 +774,7 @@ const TabList = () => {
             </div>
 
       </div>
-
+    </div>
     </nav>
   );
 };

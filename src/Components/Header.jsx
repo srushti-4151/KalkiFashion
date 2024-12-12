@@ -35,12 +35,12 @@ const Header = ({ isBridalPage }) => {
       id="header" 
       className={`relative z-10 w-full pb-3 lg:pt-4 lg:pb-3 ${isBridalPage1 ? "bridal-header" : ""}`}>
         <div className="container d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-between pb-0">
-          <nav className={`nav-tabs ${tabsOpen ? "open" : ""}`}> {/* Added conditional class for visibility */}
-            {/* Main Navbar Tabs */}
-            <div className={`d-none d-lg-block ${tabsOpen ? 'show-tabs' : ''}`} id="tabs"> {/* Tabs visibility based on `tabsOpen` */}
+          <nav className={`nav-tabs ${tabsOpen ? "open" : ""}`}> 
+      
+            <div className={`d-none d-lg-block ${tabsOpen ? 'show-tabs' : ''}`} id="tabs">
               <div className="header-tabs tab-set d-flex">
                 <div className="tab menu-active" id="women-nav">
-                <NavLink to="/women" className="nav-link">
+                <NavLink to="/women" className="">
                   WOMEN
                 </NavLink>
                 </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "../styles/VideoCom.scss";
 import video1 from "../assets/video1.mp4";
@@ -12,6 +12,7 @@ import video8 from "../assets/video4.mp4";
 
 
 const VideoSlider = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
   const videos = [video1, video2, video3, video4, video5, video6, video7, video8];
   
   const settings = {
@@ -21,7 +22,8 @@ const VideoSlider = () => {
     centerPadding: "100px",
     slidesToShow: 4,
     slidesToScroll: 1,
-    speed: 500,
+    speed: 500, 
+    beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex), 
     responsive: [
       {
         breakpoint: 768,
@@ -39,7 +41,6 @@ const VideoSlider = () => {
       },
     ],
   };
-
   return (
     <div className="video-slider-container">
       <h2 className="title">Trending Looks To Watch</h2>
