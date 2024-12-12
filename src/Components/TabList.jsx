@@ -92,8 +92,7 @@ const TabList = () => {
                 />
                 </div>
             </div>
-            </div>
-
+        </div>
       </div>
       <div className="mega-tab-menu half-mobie-menu">
         <a className="mega-tab-menu-parent-link" href="#">

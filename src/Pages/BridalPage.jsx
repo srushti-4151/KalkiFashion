@@ -122,7 +122,7 @@ const Bridal = () => {
                 type="video/mp4"
                 allow="accelerometer; autoplay; modestbranding; encrypted-media; gyroscope; picture-in-picture"
               >
-                Your browser does not support the video tag.
+                video
               </video>
             </div>
             <div className="text-container">
@@ -232,7 +232,7 @@ const Bridal = () => {
           {/* Main Content */}
           <Col xs={12} md={12}>
             <h1 className="section-title">
-              Buy &amp; Explore Exquisite Bridal Lehengas and Wedding Dresses
+              Buy & Explore Exquisite Bridal Lehengas and Wedding Dresses
             </h1>
             <p className="section-text">
               At KALKI Fashion, we understand the pivotal role of deep-rooted cultures and heritage in Indian weddings - which is why our silhouettes capture the timeless essence of rich embroidered artistry and exquisite craftsmanship. Our handpicked and curated collection of Indian dresses for weddings, focus on bespoke designs, versatile outfits and luxurious fabrics.
@@ -254,48 +254,55 @@ const Bridal = () => {
               </span>
             ) : (
               <div>
-                <h2>Kinds of Indian Bridal Wedding Dresses</h2>
+                <h3>Kinds of Indian Bridal Wedding Dresses</h3>
                 <p className="section-text">
                   Welcome to our exquisite collection of Indian bridal dresses, where our handpicked designs are crafted to connect with your refined style. Offering you an unforgettable bridal experience, our exclusive range of <a href="https://www.kalkifashion.com/in/lehengas/bridal-wedding-lehengas.html">bridal wedding lehengas</a> will add magic to your celebratory days. Whether you dream of being the quintessential bride in royal reds, or prefer a contemporary approach with your Indian dresses for wedding, our exhaustive selection has something to cater every bride’s taste.
                 </p>
                 <ul className="section-list">
                   <li>
-                    <h3>Bridal Lehenga</h3>
-                    A classic choice that highlights our traditional culture, expert craftsmanship and artistry; this timeless bridal lehenga is designed for the bride who desires grandeur and grace...
+                    <h4>Bridal Lehenga</h4>
+                    A classic choice that highlights our traditional culture, expert craftsmanship and artistry; this timeless bridal lehenga is designed for the bride who desires grandeur and grace. A luxurious masterpiece, that is decked with intricate rich embroidery and showcases gleaming embellishments. A set that includes a flared skirt, a flowy dupatta and an ornate blouse, the Indian lehenga is the perfect canvas for grandeur wedding celebrations. Handcrafted for the bride who seeks a regal allure, this culturally-rich ensemble will turn into an heirloom piece.
                   </li>
                   <li>
-                    <h3>Modern Gown</h3>
-                    An aesthetic choice for a contemporary vibe; <a href="https://www.kalkifashion.com/in/gowns/bridal-gowns.html">bridal gowns</a> display a sophisticated blend of modern design and elegant cuts...
+                    <h4>Modern Gown</h4>
+                    An aesthetic choice for a contemporary vibe; bridal gowns display a sophisticated blend of modern design and elegant cuts. The minimalist detailing elevated with whimsical trails, offers an ultimate haven for brides seeking to express their unique and individual style. An alternative paradise to the traditional heavy bridal lehenga, modern gowns open up a world of decadent luxury and understated elegance. From destination weddings to close-knit ceremonies, these gowns will make a stunning statement.
                   </li>
                   <li>
-                    <h3>Bridal Saree</h3>
-                    A harmonious melange of traditional norms and new-age designs, the bridal saree acts as a versatile piece...
+                    <h4>Bridal Saree</h4>
+                    A harmonious melange of traditional norms and new-age designs, the bridal saree acts as a versatile piece, for the bride who wishes to embrace her contemporary flair. A visual delight, this bridal saree set is complemented with a blouse and a cascading veil that adds a touch of ethereal elegance. A magnificent choice for brides who wish to celebrate their age-old traditions with a hint of modernity, ensuring an escape that is nothing short of magical and beautiful memories.
                   </li>
                 </ul>
 
-                <h2>Styling Your Bridal Lehenga with KALKI Fashion</h2>
+                <h3>Styling Your Bridal Lehenga with KALKI Fashion</h3>
                 <p className="section-text">
-                  The weather in India can vary from hot and humid to chilly and pleasant, depending on the year and region...
+                The weather in India can vary from hot and humid to chilly and pleasant, depending on the year and region. Styling your Indian dresses for weddings in the snow-clapped North, requires you to stay all warmed up while being stylish. Opt for heavier Indian jewellery that bloom with crystal embellishments and heirloom techniques. A layered haar, a Kundan choker, along with traditional jhumkas and embellished maangtikka, will help you master the art of layering. For weddings in warmer climates, lighter and delicate pieces make for a smart choice. You can choose a dainty necklace with subtle earrings, to exude understated glam, while keeping you comfortable at all times.
+                </p>
+                <p className="section-text">
+                The next aspect of getting your D-day right is by getting the right bridal footwear. The right pair of shoes - be it juttis, bejewelled sneakers or a sparkly dose of kitten heels, stride through the day in style and comfort by making the right choice. Consider embellished block heels that balance modern designs and practicality. Ideal for not-so-sturdy outdoors, a crystal-studded pair will bring in the just right amount of dazzle and shine to your gorgeous bridal lehenga.
+                </p>
+                <p className="section-text">
+                Nothing completes your regal Indian lehengas, like an embellished bridal purse. From luxurious and rich velvet potli bags to bedazzling, tassel- drop clutches. Besides adding to the glitz and the glam of your memorable day, these statement pieces accentuate the look of your Indian wedding dresses. Stylish and extremely practical, these carry-on accessories help you stack a ton of essentials - be it your lipstick or a compact mirror, these bridal purses magically tie together your beautiful D-day ensemble.
                 </p>
 
-                {/* More Content */}
-                <h2>The Art of Draping Bridal Indian Lehenga</h2>
+                <h3>The Art of Draping Bridal Indian Lehenga</h3>
                 <p className="section-text">
-                  An integral part of Indian weddings, draping your beautiful bridal lehengas is truly a work of art...
+                An integral part of Indian weddings, draping your beautiful bridal lehengas is truly a work of art. The right flowy silhouettes and the right fabrics play a key role in turning your Indian lehengas into the dress of your dreams. The correct choice of fabric - from opulent silk, to heavy velvet, and lightweight georgette; the texture that you finally select will help in accentuating your flattering curves. Adding elegance to the traditional design, the right drape will help you feel and look confident on your wedding day.
                 </p>
 
                 <ul className="section-list">
                   <li>
-                    <h3>Velvet Lehenga</h3>
-                    Fabrics that speak volumes; crafted to artistic glory...
+                    <h4>Velvet Lehenga</h4>
+                    Fabrics that speak volumes; crafted to artistic glory, premium rich materials like silk and heirloom-favorite brocade offer a regular allure and showcase your refined taste. A classic route if you wish to celebrate your love for exquisite handcrafted embroidery and glistening textures. Bridal lehengas that are crafted on these rich canvases are ideal for the grandest of celebrations and formal weddings. Embodying a sense of luxury with timeless elegance, these Indian bridal dresses help you glide through with ease and sophistication.
                   </li>
                   <li>
-                    <h3>Georgette Lehenga</h3>
-                    Airy and lightweight, these feather-like Indian lehengas offer comfort with functionality...
+                    <h4>Georgette Lehenga</h4>
+                    Airy and lightweight, these feather-like Indian lehengas offer comfort with functionality. Planning on outdoor summer weddings? Then opting for fabrics like crepe, georgette would be considered an apt choice. Adding a whimsical touch to all your memorable twirl-worthy moments, these bridal dress lehengas are curated for subtle movements. You can dance and live every second of your celebratory event to the fullest, while staying super comfortable and extremely stylish.
+
                   </li>
                   <li>
-                    <h3>Crepe Lehenga</h3>
-                    Accentuate your flattering curves with silhouettes that wrap your body...
+                    <h4>Crepe Lehenga</h4>
+                    Accentuate your flattering curves with silhouettes that wrap your body Airy and lightweight, these feather-like Indian lehengas offer comfort with functionality. Planning on outdoor summer weddings? Then opting for fabrics like crepe, georgette would be considered an apt choice. Adding a whimsical touch to all your memorable twirl-worthy moments, these bridal dress lehengas are curated for subtle movements. You can dance and live every second of your celebratory event to the fullest, while staying super comfortable and extremely stylish.
+                    ...
                   </li>
                 </ul>
 
@@ -303,23 +310,25 @@ const Bridal = () => {
                   With an exhaustive and varied range of designs to choose from, opt for bridal lehengas that not only match the theme of your event but also that will hold a special place in your heart, for years to come.
                 </p>
 
-                <h2>Things to Consider Before Buying Indian Bridal Wedding Dresses Online</h2>
+                <h3>Things to Consider Before Buying Indian Bridal Wedding Dresses Online</h3>
                 <ul className="section-list">
                   <li>
-                    <h3>Understand Your Measurements</h3>
-                    Accurate measurement of your bust, waist and hips are extremely important...
+                    <h4>Understand Your Measurements</h4>
+                    Accurate measurement of your bust, waist and hips are extremely important. The right fit depends on your curves being accentuated, and the waist, bust and hips play a crucial role in just that. Browse the size chart of each Indian lehenga that you have added to your cart, and go for the nearest measurement. Always research a bit deeper and pay keen attention to customer reviews and feedback, especially the ones who have opted for similar Indian dresses for weddings in recent times.
+
                   </li>
                   <li>
-                    <h3>Explore Fabric and Material Descriptions</h3>
-                    Do not shy away from scrolling through the plethora of filters...
+                    <h4>Explore Fabric and Material Descriptions</h4>
+                    Do not shy away from scrolling through the plethora of filters Accurate measurement of your bust, waist and hips are extremely important. The right fit depends on your curves being accentuated, and the waist, bust and hips play a crucial role in just that. Browse the size chart of each Indian lehenga that you have added to your cart, and go for the nearest measurement. Always research a bit deeper and pay keen attention to customer reviews and feedback, especially the ones who have opted for similar Indian dresses for weddings in recent times.
+                    
                   </li>
                   <li>
-                    <h3>Look for Customization Options</h3>
-                    It’s all about customizing your bridal lehenga to the T...
+                    <h4>Look for Customization Options</h4>
+                    It's all about customizing your bridal lehenga to the Accurate measurement of your bust, waist and hips are extremely important. The right fit depends on your curves being accentuated, and the waist, bust and hips play a crucial role in just that. Browse the size chart of each Indian lehenga that you have added to your cart, and go for the nearest measurement. Always research a bit deeper and pay keen attention to customer reviews and feedback, especially the ones who have opted for similar Indian dresses for weddings in recent times.
+                    
                   </li>
                 </ul>
 
-                {/* Read Less Button */}
                 <span
                   className="read-more-button"
                   onClick={() => setReadMore(false)}

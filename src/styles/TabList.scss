@@ -120,27 +120,21 @@
           }
         }
       }
-      /* Ensure parent menu has relative positioning */
       .mega-tab-menu-parent-link {
         position: relative;
       }
       
-      /* Show dropdown on hover of parent menu */
       .mega-tab-menu:hover #menusub-level2 {
         display: block;
       }
       
-      /* Ensure parent menu has relative positioning */
       .mega-tab-menu {
         position: relative;
       }
-      
-      
   
       &:hover .mega-tab-menu-level1 {
-        display: block; /* Show submenu on hover */
+        display: block;
       }
     }
-   
   }
   

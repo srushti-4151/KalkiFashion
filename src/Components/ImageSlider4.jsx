@@ -1,67 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "../styles/ImageSlider.scss"; 
 import { FaChevronLeft } from "react-icons/fa6";
 import { FaChevronRight } from "react-icons/fa6";
 
-const CustomPrevArrow = ({ className, style, onClick }) => (
-  <button
-    className={`carousel-btn ${className}`}
-    style={{ ...style, display: "block" }}
-    onClick={onClick}
-  >
-    <FaChevronLeft className="slick-prev chevron-icon chevron-icon-prev" />
-  </button>
-);
-
-const CustomNextArrow = ({ className, style, onClick }) => (
-  <button
-    className={`carousel-btn ${className}`}
-    style={{ ...style, display: "block" }}
-    onClick={onClick}
-  >
-    <FaChevronRight className="chevron-icon slick-next chevron-icon-next" />
-  </button>
-);
-
 
 const ImageSlider4 = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <CustomPrevArrow />,
-    nextArrow: <CustomNextArrow />,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          dots: true,
-        },
-      },
-    ],
-  };
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [slider, setSlider] = useState(null);
 
   const sliderItems = [
     {
@@ -132,10 +78,79 @@ const ImageSlider4 = () => {
     },
   ];
 
+  const CustomPrevArrow = ({ className, style, onClick, isVisible }) => (
+    <button
+      className={`carousel-btn ${className}`}
+      style={{ ...style, display: isVisible ? "block" : "none" }}
+      onClick={onClick}
+    >
+      <FaChevronLeft className="slick-prev chevron-icon chevron-icon-prev" />
+    </button>
+  );
+  
+  const CustomNextArrow = ({ className, style, onClick, isVisible }) => (
+    <button
+      className={`carousel-btn ${className}`}
+      style={{ ...style, display: isVisible ? "block" : "none" }}
+      onClick={onClick}
+    >
+      <FaChevronRight className="chevron-icon slick-next chevron-icon-next" />
+    </button>
+  );
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: true,
+    beforeChange: (oldIndex, newIndex) => setCurrentIndex(newIndex),
+    afterChange: (index) => setCurrentIndex(index),
+    prevArrow: (
+      <CustomPrevArrow
+        isVisible={currentIndex > 0}
+        onClick={() => slider?.slickPrev()}
+      />
+    ),
+    nextArrow: (
+      <CustomNextArrow
+        isVisible={currentIndex < sliderItems.length - 5}
+        onClick={() => slider?.slickNext()}
+      />
+    ),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+    ],
+  };
+
   return (
     <div className="slider-container">
       <h2 className="section-title">Bestseller's Edit</h2>
-      <Slider {...settings}>
+      <Slider ref={setSlider} {...settings}>
         {sliderItems.map((item) => (
           <div key={item.id} className="slider-item">
             <img src={item.image} alt={item.title} className="slider-image" />

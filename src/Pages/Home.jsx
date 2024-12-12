@@ -25,7 +25,7 @@ const Home = () => {
     <CarouselSlider />
     <Iconpart />
     <Section />
-    {/* <VideoCom /> */}
+    <VideoCom />
     <ImageSlider />
     <ImageSlider2 />
     <Banner />
