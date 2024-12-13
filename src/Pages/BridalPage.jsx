@@ -114,13 +114,13 @@ const Bridal = () => {
               <video
                 className="video"
                 width="500"
-                autoplay="autoplay"
+                autoPlay="autoPlay"
                 loop="loop"
                 muted
-                playsinline
+                playsInline
                 src="https://newcdn.kalkifashion.com/media/wysiwyg/jewellery-4th-banner_2.mp4"
                 type="video/mp4"
-                allow="accelerometer; autoplay; modestbranding; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoPlay; modestbranding; encrypted-media; gyroscope; picture-in-picture"
               >
                 video
               </video>
@@ -151,13 +151,13 @@ const Bridal = () => {
         <video 
         className="w-100"
         width="500"
-        autoplay="autoplay"
+        autoPlay="autoPlay"
         loop="loop"
         muted
-        playsinline
+        playsInline
         src="https://cdn4.fireworktv.com/medias/2024/11/15/1731653937-icpqwkyl/watermarked/720/BabyPink2RafatFWL.mp4"
         type="video/mp4"
-        allow="accelerometer; autoplay; modestbranding; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; autoPlay; modestbranding; encrypted-media; gyroscope; picture-in-picture"
         >
         </video>
       </div>
@@ -176,13 +176,13 @@ const Bridal = () => {
       <div className="col-12 col-md-4 p-0 videoHeightShort col">
         <video className="w-100"
         width="500"
-        autoplay="autoplay"
+        autoPlay="autoPlay"
         loop="loop"
         muted
-        playsinline
+        playsInline
         src="https://cdn4.fireworktv.com/medias/2024/11/15/1731653894-iazfptvl/watermarked/720/2RustOrangeRAFATFL.mp4"
         type="video/mp4"
-        allow="accelerometer; autoplay; modestbranding; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; autoPlay; modestbranding; encrypted-media; gyroscope; picture-in-picture"
         >
         </video>
       </div>
@@ -214,9 +214,8 @@ const Bridal = () => {
               width="100%" 
               height="349" 
               src="https://www.youtube.com/embed/Fw9tInDZyHA" 
-              title="YouTube video player" 
-              frameBorder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              title="YouTube video player"
+              allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowFullScreen
             />
           </div>

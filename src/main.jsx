@@ -10,6 +10,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Home from './Pages/Home.jsx';
 import Layout from './Layout.jsx';
 import BridalPage from './Pages/BridalPage.jsx';
+import Signup from './Pages/Signup.jsx';
+import Login from './Pages/Login.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +19,8 @@ const router = createBrowserRouter(
       <Route path='' element={<Home/>}/>
       <Route path='women' element={<Home/>}/>
       <Route path='bridal' element={<BridalPage/>}/>
+      <Route path='signup' element={<Signup/>}/>
+      <Route path='login' element={<Login/>}/>
     </Route>
   )
 )

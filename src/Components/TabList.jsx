@@ -296,11 +296,13 @@ const TabList = () => {
             </div>
 
       </div>
+
+
       <div className="mega-tab-menu half-mobie-menu">
         <a className="mega-tab-menu-parent-link" href="#">
           BLOUSE
         </a>
-        <div id="menusub-level2" className="mega-tab-menu-level1">
+        <div id="menusub-level2" className="mega-tab-menu-level3">
             <div className="row">
                 {/* Style Section */}
                 <div className="menu-column">
@@ -385,7 +387,7 @@ const TabList = () => {
         <a className="mega-tab-menu-parent-link" href="#">
           MEN
         </a>
-        <div id="menusub-level2" className="mega-tab-menu-level1">
+        <div id="menusub-level2" className="mega-tab-menu-level3">
             <div className="row">
                 {/* Style Section */}
                 <div className="menu-column">
@@ -463,7 +465,7 @@ const TabList = () => {
         <a className="mega-tab-menu-parent-link" href="#">
           BRIDAL
         </a>
-        <div id="menusub-level2" className="mega-tab-menu-level1">
+        <div id="menusub-level2" className="mega-tab-menu-level3">
             <div className="row">
                 {/* Occasion Section */}
                 <div className="menu-column">
@@ -518,13 +520,14 @@ const TabList = () => {
                 </div>
             </div>
             </div>
-
       </div>
+
+      
       <div className="mega-tab-menu half-mobie-menu">
         <a className="mega-tab-menu-parent-link" id='mehendi' href="#">
           MEHENDI
         </a>
-        {/* <div id="menusub-level2" className="mega-tab-menu-level1">
+        {/* <div id="menusub-level2" className="mega-tab-menu-level2">
             <div className="row">
                 <div className="menu-column">
                 <p className="mega-tab-menu-block-label">Style</p>
@@ -599,7 +602,7 @@ const TabList = () => {
         <a className="mega-tab-menu-parent-link" id='mehendi' href="#">
           WEDDING
         </a>
-        <div id="menusub-level2" className="mega-tab-menu-level1">
+        <div id="menusub-level2" className="mega-tab-menu-level2">
             <div className="row">
                 {/* Occasion Section */}
                 <div className="menu-column">
@@ -637,7 +640,7 @@ const TabList = () => {
         <a className="mega-tab-menu-parent-link" href="#">
           COLLECTION
         </a>
-        <div id="menusub-level2" className="mega-tab-menu-level1">
+        <div id="menusub-level2" className="mega-tab-menu-level2">
             <div className="row">
                 {/* Style Section */}
                 <div className="menu-column">
@@ -715,7 +718,7 @@ const TabList = () => {
         <a className="mega-tab-menu-parent-link" href="#">
           NEW
         </a>
-        <div id="menusub-level2" className="mega-tab-menu-level1">
+        <div id="menusub-level2" className="mega-tab-menu-level2">
             <div className="row">
                 <div className="menu-column">
                 <p className="mega-tab-menu-block-label">Style</p>
@@ -740,7 +743,7 @@ const TabList = () => {
         <a className="mega-tab-menu-parent-link" href="#">
           SALE
         </a>
-        <div id="menusub-level2" className="mega-tab-menu-level1">
+        <div id="menusub-level2" className="mega-tab-menu-level2">
             <div className="row">
                 {/* Style Section */}
                 <div className="menu-column">

@@ -14,9 +14,10 @@ const Layout = () => {
     <>
     
     {!isBridalPage && <TopSlider />}
-    <Header isBridalPage={isBridalPage} />
+    <Header isBridalPage={isBridalPage}/>
       
     <Outlet />
+
     <ToastContainer
         position="top-right"
         autoClose={3000}

@@ -9,6 +9,8 @@ import "../styles/Header.scss";
 import TabList from "./TabList";
 import MobileTab from "./MobileTab";
 import { NavLink, useLocation } from 'react-router-dom';
+import Signup from "../Pages/Signup";
+import Login from "../Pages/Login";
 
 const Header = ({ isBridalPage }) => {
   const location = useLocation();
@@ -28,7 +30,14 @@ const Header = ({ isBridalPage }) => {
   const handleSearchToggle = () => {
     setSearchOpen(!searchOpen);
   };
+  const [showSignup, setShowSignup] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
 
+  const handleOpenSignup = () => setShowSignup(true);
+  const handleCloseSignup = () => setShowSignup(false);
+
+  const handleOpenLogin = () => setShowLogin(true);
+  const handleCloseLogin = () => setShowLogin(false);
   return (
     <>
       <div 
@@ -121,9 +130,30 @@ const Header = ({ isBridalPage }) => {
               <a className="header-video-shop" id="whatsapp-icon" href="#" target="_blank">
                 <IoLogoWhatsapp className="head-icon-12345 head-icon-wp" color="#404040"/>
               </a>
-              <a className="header-video-shop" href="#" target="_blank">
-                <CgProfile className="head-icon-12345" color="#404040"/>
-              </a>
+              <span className="header-video-shop" href="#" target="_blank">
+                 <div className="header-icons">
+                  {/* Other header icons */}
+                  <NavLink
+                    to="/signup"
+                    onClick={(e) => {
+                      e.preventDefault();  // prevent to nagivate to signup 
+                      handleOpenSignup(); // Open the modal
+                    }}
+                    className="header-video-shop"
+                  >
+                    <CgProfile className="head-icon-12345" color="#404040" />
+                  </NavLink>
+                </div>
+                {/* Render Signup Modal */}
+                <Signup 
+                  show={showSignup} 
+                  handleClose={handleCloseSignup} 
+                  handleOpenLogin={handleOpenLogin}/>
+                <Login 
+                  show={showLogin} 
+                  handleClose={handleCloseLogin}  
+                  handleOpenSignup={handleOpenSignup}/>
+              </span>
               <a className="header-video-shop" href="#" target="_blank">
                 <GoHeart className="head-icon-12345" color="#404040"/>
               </a>

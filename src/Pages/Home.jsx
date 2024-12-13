@@ -18,6 +18,7 @@ import KalkiDes from '../Components/KalkiDes';
 import ImageSlider5 from '../Components/ImageSlider5';
 import ImageSlider6 from '../Components/ImageSlider6';
 import VideoCom from '../Components/VideoCom';
+import MobileBottomBar from '../Components/MobileBottomBar';
 
 const Home = () => {
   return (
@@ -41,6 +42,7 @@ const Home = () => {
     <VisitStore />
     <CardSlider/>
     <KalkiDes />
+    <MobileBottomBar/>
     </>
   )
 }
