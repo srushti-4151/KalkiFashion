@@ -3,6 +3,10 @@ import { Container, Row, Col, Accordion } from 'react-bootstrap';
 import '../styles/Footer.scss';
 import { FaInstagram,FaFacebookF, FaWhatsapp, FaYoutube,FaPinterest    } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
+import { BsEmojiSmile } from "react-icons/bs";
+import { MdOutlineLocalShipping } from "react-icons/md";
+import { BsArrowClockwise } from "react-icons/bs";
+import { FiPercent } from "react-icons/fi";
 
 
 const Footer = () => {
@@ -290,15 +294,51 @@ const Footer = () => {
               </Accordion.Item>
             </Accordion>
           </Col>
-        </Row>
 
+          <Row className='pt-4 bottom-row'>
+            <h6>LATEST ETHNIC COLLECTION</h6> 
+            <p>KALKI Couture Deme By Gabriella X Kalki Dark Romance La Soirée ZOHA KALKI X ALANNA PANDAY Resort Prints NOOR RUMI Zayra Inara</p>
+            <h6>new arrival</h6> 
+            <p>Latest Salwar Suits Latest Sarees Latest Lehengas Latest Men's wear</p>
+            <h6>BEST SELLER</h6> 
+            <p>Best Selling Salwar Suits Best Selling Saree Best Selling Lehengas Best Selling Gown Best Selling Kurti Best Selling Men's wear</p>
 
+            <div className='iconspart'>
+              <Col xs={12} md={3} lg={2}>
+              <div className='icon'>
+                <BsEmojiSmile size={50}/>
+                <h4>24x7 Customer Support</h4>
+              </div>
+              </Col>
+              <Col xs={12} md={3} lg={2}>
+              <div className='icon'>
+                <MdOutlineLocalShipping size={50}/>
+                <h4>24x7 Customer Support</h4>
+              </div>
+              </Col>
+              <Col xs={12} md={3} lg={2}>
+              <div className='icon'>
+                <BsArrowClockwise size={50}/>
+                <h4>24x7 Customer Support</h4>
+              </div>
+              </Col>
+              <Col xs={12} md={3} lg={2}>
+              <div className='icon'>
+                <FiPercent size={50}/>
+                <h4>24x7 Customer Support</h4>
+              </div>
+            </Col>
+            </div>
+
+            <div className='fs-12'>We Ship Across the World United States, United Kingdom, Canada, Australia, India</div>
+          </Row>
         {/* Bottom Row */}
-        {/* <Row className="mt-4 text-center">
-          <Col xs={12}>
-            <p>© 2007 - 2024 Kalkifashion All Rights Reserved.</p>
-          </Col>
-        </Row> */}
+          <Row className="mt-4 text-end fs-14 bottom-row">
+            <Col xs={12}>
+              <p>© 2007 - 2024 Kalkifashion All Rights Reserved.</p>
+            </Col>
+          </Row>
+        </Row>
       </Container>
     </footer>
   );

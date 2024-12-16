@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/BridalPage.scss";
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import FAQ from "../Components/FAQ";
 
 const Bridal = () => {
   const [readMore, setReadMore] = useState(false);
@@ -340,6 +341,8 @@ const Bridal = () => {
         </Row>
       </Container>
     </section>
+
+    <FAQ />
   </>
   );
 };

@@ -1,0 +1,35 @@
+.FAQcon {
+  text-align: center;
+
+  .faq-heading {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .accordion {
+    margin-top: 10px;
+
+    .accordion-header {
+      .accordion-button {
+        background-color: #ffffff; 
+        color: #020202; 
+        font-weight: 600;
+        border: none;
+        box-shadow: none; 
+      }
+    }
+
+    .accordion-body {
+      text-align: left;
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .faq-heading {
+      font-size: 1.8rem;
+    }
+  }
+}
