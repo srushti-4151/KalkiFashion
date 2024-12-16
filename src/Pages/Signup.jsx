@@ -239,6 +239,7 @@ const Signup = ({ show, handleClose, handleOpenLogin: openLogin, setLoggedIn }) 
                     <span>Already Have an account?</span>
                     <NavLink
                       to="/login"
+                      className={"loginlink ps-2"}
                       onClick={(e) => {
                         e.preventDefault();
                         handleClose();

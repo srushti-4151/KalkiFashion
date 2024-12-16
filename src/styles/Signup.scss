@@ -96,6 +96,7 @@
       button.custom-next-btn {
         background: #030303;
         color: #fff;
+        border: 1px solid black;
         text-transform: uppercase;
         &:hover {
           background: #f8f8f8;
@@ -121,11 +122,18 @@
         height: 50px;
         border: 1px solid #000;
         border-radius: 50%;
+        &:hover {
+          background: #000000;
+          color: #ffffff;
+        }
       }
     }
   
     hr {
       margin: 15px 0;
+    }
+    .loginlink{
+      color: #000;
     }
   
     .text-center span {
