@@ -11,8 +11,12 @@ import MobileTab from "./MobileTab";
 import { NavLink, useLocation } from 'react-router-dom';
 import Signup from "../Pages/Signup";
 import Login from "../Pages/Login";
+import { MdPersonPin } from "react-icons/md";
+import { TbCards } from "react-icons/tb";
+import { CiHeart } from "react-icons/ci";
 
-const Header = ({ isBridalPage }) => {
+
+const Header = ({ loggedIn, setLoggedIn, isBridalPage }) => {
   const location = useLocation();
   const isBridalPage1 = location.pathname == "/bridal";
   const isUserDashboard = location.pathname.includes("/user-dashboard");
@@ -39,6 +43,16 @@ const Header = ({ isBridalPage }) => {
 
   const handleOpenLogin = () => setShowLogin(true);
   const handleCloseLogin = () => setShowLogin(false);
+
+  
+  const handleLogout = () => {
+    setLoggedIn(false); // Set loggedIn state to false on logout
+  };
+
+  const [hovered, setHovered] = useState(false);
+
+  const handleMouseEnter = () => setHovered(true);
+  const handleMouseLeave = () => setHovered(false);
   return (
     <>
       <div 
@@ -129,9 +143,39 @@ const Header = ({ isBridalPage }) => {
               <a className="header-video-shop" id="whatsapp-icon" href="#" target="_blank">
                 <IoLogoWhatsapp className="head-icon-12345 head-icon-wp" color="#404040"/>
               </a>
+                {loggedIn && (
+                <div
+                  className="profile-dropdown-container"
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <a className="header-video-shop" href="#" target="_blank">
+                  <CgProfile className="head-icon-12345" color="#228B22" />
+                  </a>
+                  {hovered && (
+                    <div className="profile-dropdown">
+                      <NavLink to="/user-dashboard/account-details" className="dropdown-item">
+                        <MdPersonPin size={25}/> Account Details
+                      </NavLink>
+                      <NavLink to="/user-dashboard/orders" className="dropdown-item">
+                       <TbCards size={25}/> Order History
+                      </NavLink>
+                      <NavLink to="/user-dashboard/orders" className="dropdown-item">
+                       <CiHeart size={25}/> Wishlist
+                      </NavLink>
+                      <NavLink to="/women">
+                      <button className="dropdown-item" onClick={handleLogout} style={{ color: "#FF0000" }}>
+                     
+                        Logout
+                      </button>
+                      </NavLink>
+                    </div>
+                  )}
+                </div>
+              )}
               <span className="header-video-shop" href="#" target="_blank">
                  <div className="header-icons">
-                  {/* Other header icons */}
+                  
                   <NavLink
                     to="/signup"
                     onClick={(e) => {
@@ -146,6 +190,7 @@ const Header = ({ isBridalPage }) => {
                 {/* Render Signup Modal */}
                 <Signup 
                   show={showSignup} 
+                  setLoggedIn={setLoggedIn}
                   handleClose={handleCloseSignup} 
                   handleOpenLogin={handleOpenLogin}/>
                 <Login 

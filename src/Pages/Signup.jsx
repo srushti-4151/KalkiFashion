@@ -7,7 +7,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 import Login from "./Login";
 
-const Signup = ({ show, handleClose, handleOpenLogin: openLogin }) => {
+const Signup = ({ show, handleClose, handleOpenLogin: openLogin, setLoggedIn }) => {
   const location = useLocation();
   const isSignupRoute = location.pathname === "/signup";
 
@@ -75,10 +75,12 @@ const Signup = ({ show, handleClose, handleOpenLogin: openLogin }) => {
     e.preventDefault();
     if (validateForm()) {
       handleClose();
+      setLoggedIn(true);
       navigate("/user-dashboard");
     }
   };
 
+  //  const [loggedIn, setLoggedIn] = useState(false);
   return (
     <Modal
       show={show || isSignupRoute}

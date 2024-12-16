@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -10,11 +10,13 @@ const Layout = () => {
   const location = useLocation();
   const isBridalPage = location.pathname.includes("/bridal");
 
+  const [loggedIn, setLoggedIn] = useState(false);
+
   return (
     <>
     
     {!isBridalPage && <TopSlider />}
-    <Header isBridalPage={isBridalPage}/>
+    <Header loggedIn={loggedIn} setLoggedIn={setLoggedIn} isBridalPage={isBridalPage}/>
       
     <Outlet />
 
