@@ -1,0 +1,57 @@
+.account-details-container {
+    font-family: "Lexend", sans-serif;
+  
+    h4 {
+      font-weight: 600;
+    }
+  
+    .default-white-box1 {
+      background-color: #fff;
+      border: 1px solid #d3d3d3;
+      border-radius: 0.5rem;
+  
+      .custom-login-form1 {
+        h5 {
+          font-size: 18px;
+          margin: 0;
+          font-weight: 500;
+        }
+  
+        .fs-12 {
+          font-size: 12px;
+          margin: 0;
+        }
+  
+        .fs-14 {
+          font-size: 14px;
+          margin-top: 0.5rem;
+        }
+  
+        .text-danger {
+          color: #dc3545;
+        }
+  
+        .custom-next-btn {
+          padding: 0.5rem;
+          background-color: #000;
+          color: #fff;
+          border: 1px solid black;
+          margin-top: 1rem;
+          text-transform: uppercase;
+          border-radius: 0.5rem;
+  
+          &:hover {
+            background-color: #ffffff;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .default-white-box {
+      padding: 1rem;
+    }
+  }
+  

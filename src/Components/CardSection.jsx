@@ -27,7 +27,7 @@ const CardSection = () => {
         <div className="appointment-content">
           <Container fluid>
             <Row className="d-flex justify-content-center">
-              <Col xs={12} sm={6} className="text-center py-6 px-4">
+              <Col xs={12} sm={6} className="text-center py-6 px-4 border-right">
                 <PiDressThin size={40} className="mx-auto mb-10 empty-bg svg1"/>
                 <h2 className="font-serif font-medium">
                   Shop via video call
@@ -44,6 +44,7 @@ const CardSection = () => {
                   Book An Appointment
                 </Button>
               </Col>
+
               <Col xs={12} sm={6} className="text-center py-6 px-4">
               <PiDressThin size={40} className="mx-auto mb-10 empty-bg svg1"/>
                 <h2 className="font-serif font-medium mb-2.5">

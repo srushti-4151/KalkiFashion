@@ -1,0 +1,59 @@
+.address-container {
+    font-family: "Lexend", sans-serif;
+  
+    h4 {
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+  
+    .default-white-box1 {
+      background-color: #fff;
+      border: 1px solid #d3d3d3;
+      border-radius: 0.5rem;
+  
+      .custom-login-form1 {
+        h5 {
+          font-size: 18px;
+          font-weight: 600;
+          margin-bottom: 1rem;
+        }
+  
+        .fs-12 {
+          font-size: 12px;
+          font-weight: 500;
+        }
+  
+        .custom-next-btn {
+          background-color: #000;
+          color: #fff;
+          padding: 0.5rem;
+          border: 1px solid black;
+          border-radius: 0.5rem;
+  
+          &:hover {
+            background-color: #fff9f9;
+            color: #000;
+          }
+        }
+  
+        input,
+        textarea {
+          border-radius: 0.5rem;
+          padding: 0.5rem;
+          border: 1px solid #ccc;
+          &:focus {
+            outline: none;
+            border-color: #000;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .default-white-box {
+      padding: 1rem;
+    }
+  }
+  

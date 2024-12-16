@@ -40,7 +40,7 @@ const MobileBottomBar = () => {
           </Col>
           <Col xs="auto" className="icon-col">
           <div className='icon-set'>
-            <a href="#" className="text-center" onClick="openLoginPopup(); return false">
+            <a href="#" className="text-center">
               <IoPersonOutline size={25}/>
             </a>
           </div>

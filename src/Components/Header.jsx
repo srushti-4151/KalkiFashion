@@ -15,6 +15,7 @@ import Login from "../Pages/Login";
 const Header = ({ isBridalPage }) => {
   const location = useLocation();
   const isBridalPage1 = location.pathname == "/bridal";
+  const isUserDashboard = location.pathname.includes("/user-dashboard");
 
   const [searchOpen, setSearchOpen] = useState(false);
   const [tabsOpen, setTabsOpen] = useState(false); 
@@ -82,8 +83,6 @@ const Header = ({ isBridalPage }) => {
             </button>
           </nav>
 
-          {/* Header Logo */}
-          {/* <div className={`order-2 w-auto header-logo ${isBridalPage ? "bridal-logo" : ""}`}> */}
           <div className={"order-2 w-auto header-logo"}>
             <a
               href="/"
@@ -169,33 +168,6 @@ const Header = ({ isBridalPage }) => {
           <button className="close-menu" onClick={toggleMenu}>
             <RxCross1/>
           </button>
-          {/* <ul className="menu-list">
-              <div className="tab menu-active" id="women-nav">
-                <NavLink to="/women" className="">
-                  WOMEN
-                </NavLink>
-                </div>
-                <div className="tab menu-active" id="men-nav">
-                <NavLink to="/men" className="">
-                  MEN
-                </NavLink>
-                </div>
-                <div className="tab menu-active" id="men-nav">
-                <NavLink to="/kids" className="">
-                  KIDS
-                </NavLink>
-                </div>
-                <div className="tab menu-active" id="bridal-nav">
-                <NavLink to="/bridal" className="">
-                  BRIDAL
-                </NavLink>
-                </div>
-                <div className="tab menu-active" id="luxe-nav">
-                <NavLink to="/luxe" className="">
-                  LUXE
-                </NavLink>
-                </div>
-          </ul> */}
           <div className="cta-section">
             <h2>Get Exclusive Insider Information.</h2>
             <button>Sign in/Sign Up</button>
@@ -234,7 +206,7 @@ const Header = ({ isBridalPage }) => {
         </div>
 
         {/* Conditionally render TabList only for non-bridal pages */}
-        {!isBridalPage && (
+        {!isBridalPage && !isUserDashboard && (
           <div className="tab-list-container">
             <TabList />
           </div>

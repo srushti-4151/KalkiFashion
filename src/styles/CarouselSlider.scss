@@ -1,94 +1,185 @@
+// .custom-slider {
+//   padding: 0.8rem;
+//   position: relative;
+//   .slick-list {
+//     overflow: hidden;
+//   }
+//   .slick-slide img {
+//     width: 100%;
+//     height: auto;
+//     object-fit: cover;
+//     margin-bottom: 15px;
+//   }
+//   .slider-image-wrapper {
+//     display: block;
+//     text-decoration: none;
+//   }
+//   .custom-arrow {
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     background-color: rgb(255, 252, 252);
+//     border: none;
+//     color: #000;
+//     font-size: 24px;
+//     width: 50px;
+//     height: 50px;
+//     z-index: 2;
+//     cursor: pointer;
+//   }
+//   .prev-arrow {
+//     left: 0.2px;
+//   }
+//   .next-arrow {
+//     right: 0.2px;
+//   }
+//   .custom-arrow:hover {
+//     background-color: rgba(0, 0, 0, 0.7);
+//   }
+
+//   .custom-dots {
+//     display: flex;
+//     justify-content: center;
+//     gap: 12px;
+//     padding: 0;
+    
+//     .custom-dot {
+//       all: unset;
+//       width: 0.5rem !important;
+//       height: 0.5rem !important;
+//       background-color: rgba(0, 0, 0, 0.2);
+//       border-radius: 50%;
+//       border: none;
+//       cursor: pointer;
+//       transition: background-color 0.3s ease;
+//     }
+
+//     .custom-dot.active {
+//       background-color: #000;
+//     }
+
+//     .custom-dot:hover {
+//       background-color: rgba(0, 0, 0, 0.8);
+//     }
+//   }
+//     // .slick-dots {
+//     //   display: flex !important;
+//     //   justify-content: center; 
+//     //   align-items: center;
+//     //   list-style: none;
+//     //   margin: 1rem 0;
+  
+//     //   li {
+//     //     margin: 0 4px; 
+  
+//     //     button {
+//     //       width: 0.2rem; 
+//     //       height: 0.2rem; 
+//     //       border-radius: 50%; 
+//     //       background-color: rgba(0, 0, 0, 0.5);
+//     //       border: none;
+//     //       cursor: pointer;
+//     //       transition: background-color 0.3s ease;
+  
+//     //       &:hover {
+//     //         background-color: rgba(0, 0, 0, 0.8); 
+//     //       }
+//     //     }
+  
+//     //     &.slick-active button {
+//     //       background-color: #000; /* Active dot color */
+//     //     }
+//     //   }
+//     // }  
+// }
+
+
+$arrow-color: rgb(255, 252, 252);
+$arrow-hover-bg: rgba(0, 0, 0, 0.7);
+$dot-size: 0.5rem;
+$dot-color: rgba(0, 0, 0, 0.2);
+$dot-active-color: #000;
+$dot-hover-color: rgba(0, 0, 0, 0.8);
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin arrow-styles {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $arrow-color;
+  border: none;
+  color: #000;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $arrow-hover-bg;
+  }
+}
+
 .custom-slider {
   padding: 0.8rem;
   position: relative;
+
   .slick-list {
     overflow: hidden;
   }
+
   .slick-slide img {
     width: 100%;
     height: auto;
     object-fit: cover;
     margin-bottom: 15px;
   }
+
   .slider-image-wrapper {
     display: block;
     text-decoration: none;
   }
+
   .custom-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgb(255, 252, 252);
-    border: none;
-    color: #000;
-    font-size: 24px;
-    width: 50px;
-    height: 50px;
-    z-index: 2;
-    cursor: pointer;
-  }
-  .prev-arrow {
-    left: 0.2px;
-  }
-  .next-arrow {
-    right: 0.2px;
-  }
-  .custom-arrow:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    @include arrow-styles;
+
+    &.prev-arrow {
+      left: 0.2px;
+    }
+
+    &.next-arrow {
+      right: 0.2px;
+    }
   }
 
   .custom-dots {
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     gap: 12px;
     padding: 0;
-    
+
     .custom-dot {
       all: unset;
-      width: 0.5rem !important;
-      height: 0.5rem !important;
-      background-color: rgba(0, 0, 0, 0.2);
+      width: $dot-size !important;
+      height: $dot-size !important;
+      background-color: $dot-color;
       border-radius: 50%;
       border: none;
       cursor: pointer;
       transition: background-color 0.3s ease;
-    }
 
-    .custom-dot.active {
-      background-color: #000;
-    }
+      &.active {
+        background-color: $dot-active-color;
+      }
 
-    .custom-dot:hover {
-      background-color: rgba(0, 0, 0, 0.8);
+      &:hover {
+        background-color: $dot-hover-color;
+      }
     }
   }
-    // .slick-dots {
-    //   display: flex !important;
-    //   justify-content: center; 
-    //   align-items: center;
-    //   list-style: none;
-    //   margin: 1rem 0;
-  
-    //   li {
-    //     margin: 0 4px; 
-  
-    //     button {
-    //       width: 0.2rem; 
-    //       height: 0.2rem; 
-    //       border-radius: 50%; 
-    //       background-color: rgba(0, 0, 0, 0.5);
-    //       border: none;
-    //       cursor: pointer;
-    //       transition: background-color 0.3s ease;
-  
-    //       &:hover {
-    //         background-color: rgba(0, 0, 0, 0.8); 
-    //       }
-    //     }
-  
-    //     &.slick-active button {
-    //       background-color: #000; /* Active dot color */
-    //     }
-    //   }
-    // }  
 }
+

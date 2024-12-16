@@ -12,6 +12,14 @@ import Layout from './Layout.jsx';
 import BridalPage from './Pages/BridalPage.jsx';
 import Signup from './Pages/Signup.jsx';
 import Login from './Pages/Login.jsx';
+import UserDashboard from './Pages/UserDashboard.jsx';
+import UserDetails from './Pages/UserDetails.jsx';
+import AccountDetails from './Pages/AccountDetails.jsx';
+import Orders from './Pages/Orders.jsx';
+import GiftCard from './Pages/GiftCard.jsx';
+import SavedCards from './Pages/SavedCards.jsx';
+import Subscription from './Pages/Subscription.jsx';
+import AddressForm from './Pages/AddressForm.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +29,18 @@ const router = createBrowserRouter(
       <Route path='bridal' element={<BridalPage/>}/>
       <Route path='signup' element={<Signup/>}/>
       <Route path='login' element={<Login/>}/>
+
+      <Route path="/user-dashboard" element={<UserDashboard />}>
+        <Route path='dashboard' element={<UserDetails/>}/>
+        <Route path='account-details' element={<AccountDetails/>}/>
+        <Route path='user-details' element={<UserDetails/>}/>
+        <Route path='addresses' element={<AddressForm/>}/>
+        <Route path='orders' element={<Orders/>}/>
+        <Route path='gift-cards' element={<GiftCard/>}/>
+        <Route path='saved-cards' element={<SavedCards/>}/>
+        <Route path='subscription' element={<Subscription/>}/>
+        
+      </Route>
     </Route>
   )
 )

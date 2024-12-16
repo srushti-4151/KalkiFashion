@@ -1,0 +1,44 @@
+.ff-lexend {
+    font-family: "Lexend", sans-serif;
+  }
+  
+  .custom-order-style {
+    border-radius: 10px;
+    padding: 2rem;
+  }
+  
+  h5 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .fs-12 {
+    font-size: 12px;
+  }
+  
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  
+  .btn {
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+
+    &:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  

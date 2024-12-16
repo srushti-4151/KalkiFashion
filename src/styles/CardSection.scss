@@ -8,7 +8,7 @@
     margin-bottom: 2.5rem;
     clear: both;
     background-color: transparent;
-  
+
     .appointment-content {
       display: flex;
       flex-wrap: wrap;
@@ -50,6 +50,9 @@
       }
     }
   }
+  .border-right {
+    border-right: 1px solid #c2938f;
+  }
   
   @media (max-width: 457px) {
     .shop-video-call-section {
@@ -63,6 +66,10 @@
   
     .appointment-btn {
       bottom: 1rem;
+    }
+    .border-right {
+      border-right: none;
+      border-bottom: 1px solid #c2938f;
     }
   }
   

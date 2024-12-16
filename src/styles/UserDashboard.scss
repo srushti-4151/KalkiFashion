@@ -1,0 +1,145 @@
+  .change-container-size {
+    background-color: #f7f7f7;
+    .divcontainer {
+      max-width: 95%;
+      margin: 0 auto;
+    }
+  }
+  
+  .custom-user-header {
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    overflow: hidden;
+    border-radius: 0.5rem;
+  
+    .d-grid {
+      padding: 1rem;
+  
+      h5 {
+        margin: 0;
+      }
+  
+      p {
+        margin: 0;
+        font-size: 14px;
+      }
+  
+      hr {
+        margin: 0;
+      }
+    }
+  
+    .header-link-list {
+        .list-item{
+            border: none;
+        }
+        a {
+            color: #616161;
+            padding: 0.7rem;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            transition: 0.3s;
+    
+            svg {
+            margin-left: auto;
+            }
+    
+            &:hover,
+            &.active-nav {
+            background-color: #f7f7f7;
+            border-left: 1px solid #000;
+            color: #000;
+            padding-right: 0.25rem;
+            }
+        }
+    }
+  }
+  
+  .ff-lexend {
+    font-family: "Lexend", sans-serif;
+  }
+  
+  .default-white-box {
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    text-align: center;
+  
+    h5 {
+      font-size: 18px;
+      margin: 0;
+    }
+  
+    h6 {
+      font-size: 14px;
+      margin: 0.25rem 0;
+    }
+  
+    .icon-center-circle {
+      background-color: #f5f6f7;
+      color: #a84e2a;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+  
+      i {
+        font-size: 24px;
+      }
+    }
+  
+    .change-color-link {
+      a {
+        font-size: 14px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        color: brown;
+  
+        &:hover {
+          color: #000000;
+        }
+  
+        i {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .white-box{
+    display: flex !important;
+    justify-content: space-between !important;
+    a{
+        color: #000;
+    }
+  } 
+ 
+  
+  @media (max-width: 768px) {
+    .custom-user-header {
+      .header-link-list a {
+        font-size: 14px;
+      }
+    }
+  
+    .default-white-box {
+      padding: 1rem;
+    }
+  
+    .icon-center-circle {
+      width: 40px;
+      height: 40px;
+  
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+  
